@@ -75,7 +75,7 @@ def process_pdf(file_path):
     pdf_reader = load_pdf(file_path)
     content = extract_text_from_pdf(pdf_reader)
     paragraphs = split_into_paragraphs(content)
-    if len(paragraphs) <= len(pdf_reader.pages)*2:
+    if len(paragraphs) <= 4:
         # we have a badly formatted PDF with no logical text breaks.
         # Fall back to the bullet point extraction method
         paragraphs = extract_paragraphs_and_bullets(file_path)
