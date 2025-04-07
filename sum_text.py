@@ -9,7 +9,8 @@ def summarize_text(paragraphs:list[str]):
     for idx, chunk in enumerate(paragraphs):
         try:
             # BART can handle up to 1024 tokens, but we keep it smaller for safety
-            if len(chunk.split()) >= 1024 and len(chunk.split()): 
+            if len(chunk.split()) >= 1024: 
+    
                 print(f"Chunk {idx} is too long, splitting into smaller parts.")
                 sub_chunks = chunk.split('. ')  # Split by sentences or paragraphs
                 for sub_idx, sub_chunk in enumerate(sub_chunks):
