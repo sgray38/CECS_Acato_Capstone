@@ -1,0 +1,2357 @@
+PERFORMANCE WORK STATEMENT (PWS) 
+DEPARTMENT OF VETERANS AFFAIRS (VA) 
+Office of Information and Technology (OIT) 
+Compliance, Risk and Remediation (CRR) 
+Independent Verification and Validation (IV&V) 
+  & 
+Electronic Health Record Modernization Integration Office (EHRM-IO) 
+Integrated Testing (IntT)
+
+Date: April 11, 2024
+
+PWS Version Number: 2.0
+
+Contents 
+1.0 BACKGROUND ................................................................................................................ 4 
+1.1 OIT IV&V TMO and TC & EHRM-IO Integrated Testing FUNCTIONAL AREAS .... 7 
+1.1.1 Test Management and Operations ............................................................................ 7 
+1.1.1.1 Operations and Management .................................................................................... 7 
+1.1.1.2 Test and Evaluation ................................................................................................... 7 
+1.1.1.3 Testing Technology Support ..................................................................................... 8 
+1.1.1.4 Test Process and Quality Management ..................................................................... 8 
+1.1.2 Test Center ................................................................................................................ 8 
+1.1.2.1 Testing Systems Engineering and Implementation & Testing Technology Support 8 
+1.2 OIT SERVICES AND METHODOLOGY ...................................................................... 9 
+1.2.1 Services Executed During SDLC and SACI Planning Phase ................................. 11 
+1.2.2 Services Executed During SDLC and SACI Test Services Execution Phase ......... 11 
+1.2.3 Processes Executed in Support of Monitoring and Control .................................... 12 
+1.2.3.1 Workload Forecasting...................................................................................... 12 
+1.2.3.2 Support of Test Center Systems ...................................................................... 12 
+1.3 EHRM-IO INTEGRATED TESTING SERVICES & METHODOLOGY ................... 12 
+2.0 APPLICABLE DOCUMENTS ........................................................................................ 13 
+3.0 SCOPE OF WORK ........................................................................................................... 16 
+3.1 ORDER TYPE ............................................................................................................... 16 
+4.0 PERFORMANCE DETAILS ........................................................................................... 16 
+4.1 PERFORMANCE PERIOD ........................................................................................... 16 
+4.2 PLACE OF PERFORMANCE....................................................................................... 17 
+4.3 TRAVEL (T&M)  .......................................................................................................... 17 
+5.0 SPECIFIC TASKS AND DELIVERABLES ................................................................... 19 
+5.1 PROJECT MANAGEMENT (FFP) ............................................................................... 19 
+5.1.1 Contractor Project Management Plan ..................................................................... 19 
+5.1.2 Contract Key Personnel .......................................................................................... 19 
+5.1.3 Reporting Requirements & Management Meetings ............................................... 20 
+5.2 TEST AND EVALUATION SUPPORT (T&M) .......................................................... 20 
+5.2.1 Work Product Reviews ........................................................................................... 21 
+5.2.2 Information Gathering/Requirements Analysis ...................................................... 21 
+5.2.3 Testing Intake Assessment/Criticality Analysis and Risk Assessment .................. 21 
+5.2.4 Test Plan Summary ................................................................................................. 22 
+5.2.5 Execute Test Plan, Analyze Results, & Report Findings ........................................ 24 
+5.2.5.1 Requirements Validation Testing  ................................................................... 25 
+5.2.5.2 Performance Testing ........................................................................................ 25 
+5.2.5.3 Integration/Interoperability Testing  ................................................................ 26 
+5.2.5.4 Test Observation and Validation ..................................................................... 26 
+5.2.5.5 Software Code Quality Check Scanning ......................................................... 26 
+5.2.5.6 Automated Testing .......................................................................................... 27 
+5.2.6 Patient Safety Issue (PSI) Testing ........................................................................... 27 
+5.2.7 Section 508 Compliance Support Services ............................................................. 28 
+5.2.8 Exploratory Testing ................................................................................................ 28 
+5.2.9 Mobile and Portable Device Application Testing ................................................... 28 
+5.2.10 Test and Evaluation Management Support ............................................................. 29
+
+5.3 Testing and technology support ..................................................................................... 29 
+5.4 TEST SYSTEMS ENGINEERING AND IMPLEMENTATION SUPPORT (T&M) . 31 
+5.4.1 Administration, Architecture, and Engineering  ..................................................... 31 
+5.4.2 Operations and Maintenance and/or Continuity of Operations Services ................ 33 
+5.4.3 Database Administration Services .......................................................................... 34 
+5.4.4 Asset Management .................................................................................................. 36 
+5.4.5 Tools Assessment.................................................................................................... 37 
+5.4.6 Environment/Infrastructure Management Support Services ................................... 38 
+5.5 TEST PROCESS AND QUALITY MANAGEMENT SUPPORT (T&M) .................. 38 
+5.5.1 Process Improvement Support ................................................................................ 39 
+5.5.2 Lessons Learned and Quality Reviews ................................................................... 40 
+5.5.3 Artifact Review ....................................................................................................... 41 
+5.5.4 Content Reviews ..................................................................................................... 41 
+5.5.5 Operations and Management support ..................................................................... 41 
+5.5.6 Metric and Measures Support ................................................................................. 41 
+5.5.7 CQIP Briefings........................................................................................................ 42 
+5.5.8 Root Cause Analysis with Corrective Action Plan ................................................. 43 
+5.5.9 Technical Writing Services ..................................................................................... 43 
+5.5.10 Knowledge Management Services .......................................................................... 43 
+5.5.11 Process Management Development and Implementation ....................................... 44 
+5.5.12 Assessment & analysis for strategic and tactical planning and techinical support of OIT 
+& EHRM-IO  (T&M)................................................................................................................ 45 
+5.6 OPTIONAL TASK - TRANSITION SUPPORT (T&M) .............................................. 46
+
+1.0 BACKGROUND 
+The mission of Department of Veterans Affairs (VA), Office of Information & Technology 
+(OIT) is to collaborate with business partners to create the best experience for Veterans. In 
+meeting these goals, OIT strives to provide high quality, effective, and efficient Information 
+Technology (IT) services to those who provide care to Veterans at point-of-care as well as 
+throughout all points of each Veteran’s health care, in an effective, timely and compassionate 
+manner.  VA depends on Information Management/Information Technology (IM/IT) systems to 
+meet mission goals. 
+ 
+OIT is the steward of VA’s IT resources and is responsible for ensuring the efficient and 
+effective operation of VA’s IT Management System to meet mission requirements defined by the 
+VA Secretary and other key VA officials.  OIT partners with other VA business units to deliver 
+available, adaptable, secure, and cost-effective technology services to VA. Technology services 
+are introduced into VA via two primary approaches: in-house development or acquisition of 
+Commercial Off The Shelf (COTS) and Government Off The Shelf (GOTS). These approaches 
+follow industry, Government, and VA standards for technology, including but not limited to the 
+phases of Software Development LifeCycle (SDLC) for development and Software Acquisition, 
+Configuration, and Implementation (SACI) for COTS and GOTS. 
+ 
+OIT provides a consolidated enterprise-wide approach to identify, select, prioritize, and 
+successfully execute a portfolio of IT Services.  OIT further provides management and oversight 
+for major IT initiatives, to improve project execution and deliver better outcomes to internal and 
+external business partners and to Veterans.  
+ 
+Within OIT and reporting to the VA’s Principal Deputy Assistant Secretary for Information and 
+Technology, is the IT Service area Compliance, Risk, and Remediation (CRR) wherein 
+Independent Verification and Validation (IV&V) Test Management and Operations (TMO) and 
+the Test Center (TC) reside. At present, the services provided by IV&V support many internal 
+and external customers. The two primary customers internal to VA are: 1) OIT’s Software 
+Product Management (SPM), an OIT IT Service area which maintains VA’s Legacy and some 
+modernization Products, and 2) the Electronic Health Record Modernization Integration Office 
+(EHRM-IO), which is a VA major Program office responsible for the implementation of VA’s 
+modernization of their Electronic Health Record (EHR). The VA Supply Chain Modernization 
+(SCM) program is a VA Program office that may require testing activities under this contract.   
+SCM will acquire and implement department-wide supply chain solutions, and after various 
+research and assessments have concluded may become a customer engaging these services. 
+ 
+As the VA champion for IT quality and a risk-based approach to software testing, IV&V TMO & 
+TC provides testing services and test environments enabling EHRM-IO and OIT program and 
+project managers to deliver and deploy stable, high quality information technology solutions on-
+time and within budget.  
+ 
+While engaging in partnerships with the EHRM-IO, OIT organizations, VA administrations, and 
+other external agencies, TMO and TC measures and examines delivery and deployment 
+processes, quality, and capabilities within VA to enable a culture of continuous improvement. 
+This culture leads to enhanced program and project quality through early engagement in
+
+development or acquisition lifecycles, agile delivery of test services and test environments, and 
+elimination of process redundancy.  
+ 
+Strategic priorities include: 
+• Align resources and capabilities with VA mission-critical priorities. 
+• Communicate, collaborate, and operate transparently with internal and external 
+stakeholders, examples include: EHRM-IO Integrated Testing, OIT CRR, OIT SPM, OIT 
+Infrastructure Operations Service (IOS), OIT leadership, and the U.S. Department of 
+Defense (DoD). 
+• Promote a flexible and adaptive culture that leverages quality metrics and analytics to 
+optimize services delivery. 
+• Continuously improve existing core and supporting business processes and services and 
+develop new processes and services as VA and OIT priorities evolve. 
+• Commit to service excellence through open communication and early engagement with 
+customers. 
+ 
+Independent Verification & Validation TMO & TC are the OIT organization that provides the 
+services through this contract primarily for the independent test and evaluation of software 
+applications within the OIT portfolio.  EHRM-IO Integrated Testing is the organization that 
+utilizes TMO and TC services through this contract for the independent test and evaluation of the 
+capabilities and solutions that make up the electronic medical record.  
+ 
+On May 17, 2018, VA entered into a ten-year indefinite-delivery, indefinite-quantity contract 
+with Cerner Government Services, Inc. (Cerner now Oracle Health) to acquire the Electronic 
+Health Record (EHR) system being deployed by the Department of Defense (DoD) and related 
+services for deployment and transition across the VA enterprise in a manner that meets the VA’s 
+needs and enables seamless healthcare to Veterans and qualified beneficiaries. Procurement of a 
+single, common system across VA and DoD will achieve VA’s goal of seamless care for 
+Veterans by facilitating the transition of active-duty military members to VA and improving their 
+timely access to the highest quality of care.   
+ 
+The Oracle Health EHR solution shall provide VA with a single system that can store and 
+retrieve administrative, clinical, laboratory, radiology, pharmacy, and scheduling data, and 
+interact with other internal and external systems. Modernization of VA’s EHR will support a 
+Veteran-centric, team-based care model, with modern decision support tools; clinical information 
+content services; identification, communication and standardization of care paths; and resource 
+provisioning. This will improve interoperability, performance, and user experience for a majority 
+of the health care delivery and ancillary teams responsible for directly or indirectly providing 
+health care services; and in turn will improve quality, safety, and timeliness of health care 
+services delivered to Veterans.    
+ 
+Oracle Health provides a comprehensive EHR solution and services. The VA Electronic Health 
+Record Modernization Integration Office (EHRM-IO) and the DoD Healthcare Management 
+System Modernization (DHMSM) are moving to a joint release management of two release 
+cycles per year and releases of site-specific capabilities with the EHRM-IO site deployments.  
+EHRM-IO Integrated Testing (IntT) is the champion for EHRM-IO end-to-end IT quality and
+
+testing through the provision of software quality assurance (SQA) software testing environments, 
+testing and evaluation services, and software development projects. IntT collaborates with the 
+program and project managers to support them in the delivery and deployment of high-quality, 
+stable, interoperable IT solutions to reduce risk and minimize the impact of production defects to 
+the provided Veteran services. 
+ 
+The EHRM-IO Program is the program executive office charged with the preparation, 
+deployment, and transition to a new electronic health record (EHR) within VA.  The program 
+will ensure that the process of deploying the new EHR is done in a manner that meets VA needs 
+and supports seamless healthcare to Veterans and qualified beneficiaries.  The Integrated Testing 
+program within the EHRM-IO manages and oversees the execution of the test and evaluation 
+activities across the EHRM program and its products.  The testing community that makes up the 
+EHRM-IO Integrated Testing Program is comprised of three main organizations: Integrated 
+Testing Enterprise Test (IntT-ET), Office of Functional Champion, Functional Test & Evaluation 
+(OFC Test/OFCt), and the Oracle Health Testing & Quality Assurance (T&QA).  The resources 
+delivering these services are a mix of EHRM-IO IntT VA resources and IntT-ET contractor 
+services through this IETSS contract; OFC Test VA & EHRM-IO contractor resources; and OIT 
+TMO and TC VA resources.   
+ 
+The IETSS Contract will provide services in support of EHRM-IO IntT and OFC Test and OIT 
+TMO and TC VA resources. IETSS resources will provide services that work closely and 
+collaboratively with the Oracle Health T&QA team to ensure an integrated approach and 
+schedule for the EHRM-IO Test and Evaluation lifecycle.    
+ 
+Historically, VA developed software applications in house, so the main operational focus for 
+TMO and TC was to provide test environments and test services for VA-developed applications.  
+In mid-2017, VA announced a major shift from internally developed software applications to 
+modernization efforts, which includes a significant use of commercial off-the-shelf (COTS) 
+products.  A key element of VA modernization is the effort to replace VA’s current EHR system, 
+the Veterans Information Systems and Technology Architecture (VistA), with a COTS product. 
+For purposes of this PWS, the VA EHR solution will be referred to as the VA Electronic Health 
+Record Modernization system (EHRM). 
+ 
+EHRM is based on the electronic health record solution provided to the Department of Defense 
+(DoD) and is known as the Military Health System GENESIS, which is based on Oracle Health 
+Millennium.  The adoption of a single joint system between VA and DoD will enable patient 
+data to reside in a common system with a seamless link between DoD, VA, and community 
+providers.  When implemented, the EHR System will provide access to authoritative clinical data 
+sources; as the transition matures, it will become the authoritative source of clinical data to 
+support improved population health, patient safety, and quality of care provided by VA.
+
+1.1 OIT IV&V TMO AND TC & EHRM-IO INTEGRATED TESTING 
+FUNCTIONAL AREAS 
+OIT IV&V and EHRM-IO IntT perform services in the following major functional areas: 
+ 
+1.1.1 Test Management and Operations 
+Test Management and Operations (TMO) Associate Directorate serves as the software 
+testing operations, monitoring, risk assessment, test planning & deliver, and test process 
+management for IETSS.  TMO is comprised of 4 key branches.     
+ 
+1.1.1.1 Operations and Management 
+Operations and Management (O&M) is a part of TMO, and supports all budget planning, 
+funding execution, testing software and hardware acquisitions and maintenance activities for 
+both TMO and TC, as well as EHRM-IntT and other major customers that may arise.  O&M is 
+predominantly resourced by VA government staff, and utilizes process management, knowledge 
+management and reporting support. 
+ 
+1.1.1.2 Test and Evaluation 
+Test & Evaluation (T&E) are part of TMO. T&E are comprised of a multitude of teams, 
+delivering analysis and testing services to the EHRM-IO Program and OIT. T&E teams analyze 
+VA application requirements and COTS stakeholder project requirements to identify 
+opportunities for increase in quality and reduction of risks. Informed from such analysis, T&E 
+testing services teams recommend performing diverse software testing services.  
+ 
+The T&E analysis team are comprised of the initial forward-facing representatives in 
+engagements with customers and analysts who conduct a methodical risk-based review and 
+scoring of identified project requirements and other associated characteristics of a project or 
+system.  The analysis team collaborates with all internal and external parties during an 
+engagement to identify appropriate testing services. The T&E analysis team then creates and 
+provides a recommended course of action to engage the customer and prepare for delivery of the 
+tailored suite of testing services unique to the software product. 
+ 
+The T&E testing services delivery team coordinates within the TMO/EHRM-IO IntT 
+teams (including IV&V Test Center), and OIT SPM software project teams to establish testing 
+environments, emulate interfacing systems, manage resources, and create and improve efficient 
+repeatable processes.  T&E provides skilled and experienced leadership, technical subject matter 
+experts, testing engineers, and technicians to execute a vast array of software testing, including 
+but not limited to Test Observation and Validation (TOV), interoperability testing, system 
+integration (interface) testing (SIT), data migration, Risk-based Requirements Validation (RV) 
+testing, performance testing (benchmarking, load, ramp-up, stress, endurance, spike), 
+mobile/portable application testing, exploratory testing, static and dynamic Software Code 
+Quality Check (SCQC) scanning and reporting. T&E also supports user acceptance testing and 
+user functional testing of software development, COTS acquisition, and implementation 
+programs. The primary example of which is providing testing resources through this IETSS 
+contract for EHRM-IO Integrated Testing requirements.
+
+1.1.1.3 Testing Technology Support 
+Testing Technology Support provides testing and technology support for both OIT testing & 
+EHRM-IO IntT and major programs. Services include architecture, interoperability, VistA Data 
+Service (VDS), creation & maintenance of tools to support high volume data migration testing, 
+and service virtualization functionality. TTS provides test environment logical requirements, 
+architecture diagrams, test data, service virtual components, and configuration of test 
+environments for TMO testing projects.  
+ 
+1.1.1.4 Test Process and Quality Management 
+Test Process and Quality Management (TPQM) is focused on continuous review and 
+improvement of testing capabilities and services provided by TMO, TC and EHRM-IO 
+Integrated Testing. TPQM also directs the establishment of a system-wide definition and 
+approach for executing services for all VA projects requiring testing services from TMO and TC, 
+to include establishing and tracking metrics and measures, continuous review and improvement 
+of processes, and artifact review. The focus of TPQM is ensuring that standardization and quality 
+assurance processes are used within the OIT and EHRM IntT testing program. TPQM resources 
+serve as process consultants and subject matter experts on the VA Testing Process and assist 
+project teams with understanding the various testing processes and how they are performed 
+throughout the SDLC and SACI phases. TPQM resources work closely with the 
+portfolio/program management offices, project teams, and other VA stakeholders to define and 
+improve the Software Quality Assurance program. The Testing Logistics Support (TLS) team 
+within TPQM supports the day-to-day operation of IV&V & ERHM-IO IntT and provides 
+structure to assist in the strategic and tactical planning necessary to accomplish IV&V 
+management goals. TLS coordinates work plans and schedules with IV&V& EHRM-IO IntT 
+managers and customers to provide testing environments and services in a manner that promotes 
+a smooth flow of projects while ensuring an effective distribution of resources. Work performed 
+by TPQM also results in constant monitoring of priorities, identifying the need for changes when 
+appropriate and acting when necessary to implement changes.  
+ 
+1.1.2 Test Center 
+Test Center (TC) Associate Directorate serves as the test environment and infrastructure 
+operations oversight for IETSS.  TC is comprised of a key branch.     
+ 
+1.1.2.1 Testing Systems Engineering and Implementation, the Testing Systems 
+Engineering and Implementation (TSEI) team provides the software, hardware, and 
+physical plant infrastructure to support environments needed for testing activities, 
+including but not limited to enterprise-level software testing, EHRM-IO Integrated 
+Testing program testing, and OIT SPM project team testing (including project-level 
+integration testing, development testing, and operations support for environments and 
+systems). The Test Center (TC) Infrastructure is housed at the Bay Pines Office of 
+Information and Technology Field Office, 10000 Bay Pines Blvd, Building 37, Bay Pines, 
+FL 33744. Additionally, TSEI supports the T&E analysis team in identifying the 
+criticality and risks for technical requirements (as needed) and provides risk assessment 
+on the product architecture. The goal is to expand TC infrastructure as needed to support 
+an increasing number of testing environments, which in turn increases testing capability 
+that TMO can provide to project teams.
+
+1.2 OIT SERVICES AND METHODOLOGY 
+IV&V TMO and TC is involved early and throughout all SDLC and SACI phases, currently via 
+the VA OIT Veteran-focused Integration Process (VIP) methodology and/or the current 
+Acquisition Lifecycle Framework (ALF), although TMO and TC evolves to accommodate 
+methodology improvements and changes. TMO assists project teams with understanding all 
+aspects of the OIT and EHRM-IO Test Processes, especially those that apply to individual 
+projects. TMO also reviews all identified project requirements to analyze for level of risk, advise 
+on testability, determine special hardware/environment needs for test planning, completes testing 
+intake assessments (TIA) entrance criteria with project team collaboration, performs testing 
+intake assessments, and performs T&E services. 
+ 
+OIT follows VIP Agile and software acquisition, configuration, and implementation (SACI) 
+methodology for development and management of IT projects. VIP is a Lean-Agile framework 
+that provides efficient streamlining of activities within the VA enterprise and is designed to 
+increase the delivery speed of high-quality and secure IT capabilities. VIP methodologies are 
+reviewed on a recurring basis and refinements are made as needed. TMO stays abreast of all the 
+latest changes to the VIP methodologies that is maintained in PAL (Process Asset Library). 
+Major program SACI processes tend to align with standard VA OIT processes to include VIP, 
+and may streamline, expand, augment, or customize those VIP processes to meet program needs.  
+ 
+IV&V Test Management Operations & Test Center engagement starts with gathering project data 
+for the Testing Intake Assessment (TIA). In the case of OIT, the primary authoritative source for 
+approved and budgeted projects is VA PARS. When a new entry or new build on an existing 
+entry are established, TMO engagement begins.  TMO evaluates the VIP Request (VIPR), data 
+elements, and project artifacts to recommend TMO testing services. During product/build start, 
+TMO performs the Criticality Analysis and Risk Assessment (CARA) and recommends 
+appropriate test services. During the remainder of the project lifecycle, TMO monitors product 
+and sprint backlogs in project repositories, with follow-on CARA’s performed and 
+recommendations of further applicable testing services. TMO conducts testing services in 
+parallel with the project build. 
+ 
+TMO processes include reviewing the project artifacts, conducting an initial outreach meeting, 
+project analysis, planning, and testing service determination. When the services start, TMO 
+determines whether test environments exist which could be used for the services, or new ones are 
+built. From there, TMO executes testing, and generates reports of the test findings. TMO also 
+may conduct final regression testing following a project’s Initial Operating Capability (IOC).  
+TMO continues to monitor product and sprint backlogs until project closeout. 
+ 
+There are two primary entrances into TMO testing service engagement with a Program and/or 
+Project. One is through a Program and/or Project entering a request into TMO’s centralized 
+request management tool for testing services. The other is a proactive approach to monitoring the 
+authoritative source for approved VA projects, both for new entries and software builds within 
+existing entries. TMO engages with the VA project manager (PM) or designee to gain access to 
+the product teams repositories.  TMO conducts a high-level evaluation on all the artifacts. After 
+the evaluation, if further engagement is not recommended, TMO enters a passive engagement. If 
+TMO's engagement is recommended, a build-level risk assessment following TMO’s CARA
+
+process is conducted. TMO recommended services accepted and scheduled with the project are 
+performed against the current build and sprint based on the build-level CARA at the discretion of 
+the project or program team. If there are additional builds, TMO continues to perform build-level 
+CARAs and any recommended test services accepted by the Program and/or Project that result 
+for those builds until there are no additional builds, at which point TMO enters a passive 
+engagement. 
+ 
+For all VIP methodologies, TMO uses a risk-based approach to determine what T&E services are 
+recommended. This approach involves using a standardized methodology to determine the level 
+of testing for software applications based on risks and their probable adverse impacts to the 
+enterprise. As part of the TIA process, the CARA methodology identifies the functions, system 
+design elements, or software tasks which pose the greatest risk to the success of software 
+development initiatives. The key feature of this approach is the assessment of an appropriate 
+level of analysis for any given function based on risk and criticality. By applying CARA, 
+suitable levels of analysis, as well as the resources required to perform them can be clearly 
+defined and implemented. The services offered by TMO fit into the SDLC and SACI phases and 
+processes of planning, execution, and monitoring and control. The following diagram portrays 
+how the TMO service offerings fit into the planning and execution lifecycle phases.  
+ 
+ 
+ 
+Figure 1.2-3: Service Offerings and the SDLC and SACI phases
+
+1.2.1 Services Executed During SDLC and SACI Planning Phase 
+Three TMO services—Testing Intake Assessment (TIA), Criticality Analysis and Risk 
+Assessment (CARA), and Determine Scope and Services—are performed during the Planning 
+phase of the SDLC and SACI phases for products and/or projects. Project teams create respective 
+project documentation (epics, user stories, requirements traceability matrices, etc.) and load them 
+into the appropriate document repositories.  
+ 
+TMO’s Testing Intake Assessment starts by creating a Project Analysis Summary (PAS) record 
+based off VA approved and budgeted projects within the VA’s authoritative source. TMO triages 
+all projects in the authoritative source, using a predefined criteria to identify appropriateness for 
+further engagement. Once criteria are met, TMO requests access to the document repositories. As 
+access is granted and any available project documentation is able to undergo analysis via the TIA 
+service, TMO creates a Build Analysis Summary (BAS) for the project build. At this build level, 
+the CARA process is executed.  
+ 
+From the CARA results, the Determine Scope and Services service is performed. This service 
+involves multi-disciplinary analysis performed by all TMO teams. Once scope and services are 
+identified, TMO create a Risk Analysis Summary (RAS) which is reviewed and approved by 
+TMO VA Management. The RAS is the primary written communication to the project for TMO 
+recommended test services. As applicable, TMO will conduct a debrief with the project team. 
+Details of these services are identified in Section 5.0. 
+ 
+1.2.2 Services Executed During SDLC and SACI Test Services Execution Phase  
+After Risk Analysis Summary (RAS) delivery to the project team, applicable debriefs, and 
+project acceptance of all or any of the recommended test services, TMO enters the Execution 
+phase.  This Execution phase includes coordination with the project team to collect any further 
+information, identify the approach for test environment, and to overcome any other technical 
+challenges in preparation of TMO testing services to be performed. To formally document these 
+interactions and planning efforts TMO creates Test Plan Summary (TPS), obtains TMO VA 
+management concurrence and approval, and then delivers the TPS to the project team.  
+  
+Overlapping Planning and Execution is the TC Test Environment Construction. These 
+requirements are defined by TC engineers and delivered to TC or the major program test 
+environment managers (for COTS test systems hosted elsewhere) in the form of a Test 
+Environment Logical Requirements (TELR) document.  TC and the major program 
+representatives coordinate the creation of the test environments as necessary, and ensures the 
+environment performs as expected via a smoke test.  TC and the major program representatives 
+also may coordinate with the project team who validates the build is ready for TMO testing 
+service execution such as Requirements Validation Testing, Performance Testing, System 
+Integration/Interoperability Testing, and Software Code Quality Check (SCQC).  When the 
+appropriate components of the system under test (SUT) are available for testing, the TMO team 
+executes planned services and records the activities, findings and results in test service 
+repositories. TMO then creates a Test Analysis Summary (TAS), which is reviewed and 
+approved by TMO VA management. Once approved, the TAS is delivered to the project team
+
+and a debriefing with the project team is conducted as applicable.  Details of these services are 
+identified in section 5.   
+ 
+1.2.3 Processes Executed in Support of Monitoring and Control 
+Workload Forecasting and Support of Test Center Systems may be executed during the 
+Monitoring and Control Phase of the SDLC and SACI phases. TMO management continuously 
+checks VIPR and Test Center Service Requests so that appropriate plans can be made for 
+providing test services and/or other TMO services. 
+ 
+1.2.3.1 Workload Forecasting 
+Workload Forecasting is the process in which information from the project team and TMO is 
+used to forecast work for TMO.  TMO updates the testing project schedule to align with changes 
+gathered from the Product/Project team’s Schedule. TMO uses the information to forecast 
+project arrival and to project services which enables adequate time and resource preparation. 
+ 
+1.2.3.2 Support of Test Center Systems 
+TSEI maintains the TC located in Bay Pines, FL, which is used by various project teams for 
+software product-level Quality Assurance testing, as well as hosting software tools and test 
+environments built for delivery of TMO test services to OIT and major programs. TSEI also 
+manages test systems hosted in VA Enterprise Cloud (VAEC) as needed. Services provided by 
+the TC include: 
+ 
+• Establishment of new databases 
+• Assistance with miscellaneous issues when there is trouble with a test environment 
+• Database restore/refresh/backup 
+• User access to an environment 
+• Install, configure, manage the SUT  
+• Install, configure and manage the necessary test tools and monitoring tools  
+ 
+In accordance with OIT priorities and timelines, IV&V TC will begin planning for transition to 
+the cloud. 
+1.3 EHRM-IO INTEGRATED TESTING SERVICES & METHODOLOGY 
+The Electronic Health Record Modernization (EHRM) Joint Master Test Plan (JMTP) 
+documents the services and methodology used in the EHRM-IO Integrated Testing Program. The 
+JMTP provides the overarching guidance to coordinate and execute integrated testing of the EHR 
+that the Department of Veterans Affairs (VA) acquired from Oracle. Once deployed, the 
+Electronic Health Record (EHR) will co-exist in the same production environment as the 
+Department of Defense’s (DOD) EHR system with VA using an overlapping set of the DOD’s 
+features as well as an additional set of features. 
+ 
+The JMTP also describes the integrated testing lifecycle for the EHRM-IO Program executed 
+across the test community. The test community is comprised of Oracle Testing & Quality 
+Assurance (T&QA), deployment resources, EHRM-IO Integrated Testing (IntT) Enterprise Test 
+(ET) resources, Office of the Functional Champion (OFC) Functional Testing and Evaluation
+
+(OFCt) resources for medical enterprise and local system interfacing, the Office of Healthcare 
+Technology Management (HTM) for medical devices and peripherals testing, field site subject 
+matter experts (SMEs)/solutions experts (SEs), and EHRM-IO Clinical Councils. This plan 
+describes the involvement and relationship of various stakeholders to the test community. The 
+plan will evolve and serve as a living document, providing a framework within which detailed 
+test plans can be generated for the EHRM-IO Integrated Testing Program. 
+ 
+2.0 APPLICABLE DOCUMENTS 
+In the performance of the tasks associated with this Performance Work Statement, the Contractor 
+shall comply with the most current version of the following: 
+1. 44 U.S.C. § 3541-3549, “Federal Information Security Management Act (FISMA) of 
+2002” 
+2. “Federal Information Security Modernization Act of 2014” 
+3. Federal Information Processing Standards (FIPS) Publication 140-2, “Security 
+Requirements for Cryptographic Modules” 
+4. FIPS Pub 199. “Standards for Security Categorization of Federal Information and 
+Information Systems,” February 2004 
+5. FIPS Pub 200, “Minimum Security Requirements for Federal Information and 
+Information Systems,” March 2006 
+6. FIPS Pub 201-2, “Personal Identity Verification of Federal Employees and 
+Contractors,” August 2013 
+7. 10 U.S.C. § 2224, "Defense Information Assurance Program" 
+8. 5 U.S.C. § 552a, as amended, “The Privacy Act of 1974”  
+9. Public Law 109-461, Veterans Benefits, Health Care, and Information Technology 
+Act of 2006, Title IX, Information Security Matters 
+10. 42 U.S.C. § 2000d “Title VI of the Civil Rights Act of 1964” 
+11. VA Directive 0710, “Personnel Security and Suitability Program,” June 4, 2010, 
+https://www.va.gov/vapubs/index.cfm 
+12. VA Handbook 0710, “Personnel Security and Suitability Program,” May 2, 2016, 
+https://www.va.gov/vapubs/index.cfm 
+13. VA Directive and Handbook 6102, “Internet/Intranet Services,” August 5, 2019 
+14. 36 C.F.R. Part 1194 “Information and Communication Technology Standards and 
+Guidelines,” January 18, 2017 
+15. Office of Management and Budget (OMB) Circular A-130, “Managing Federal 
+Information as a Strategic Resource,” July 28, 2016 
+16. 32 C.F.R. Part 199, “Civilian Health and Medical Program of the Uniformed 
+Services (CHAMPUS)” 
+17. NIST SP 800-66 Rev. 1, “An Introductory Resource Guide for Implementing the 
+Health Insurance Portability and Accountability Act (HIPAA) Security Rule,” 
+October 2008 
+18. Sections 504 and 508 of the Rehabilitation Act (29 U.S.C. § 794d), as amended, 
+January 18, 2017 
+19. Homeland Security Presidential Directive (12) (HSPD-12), August 27, 2004 
+20. VA Directive 6500, “VA Cybersecurity Program,” February 24, 2021 
+21. VA Handbook 6500, “Risk Management Framework for VA Information Systems 
+VA Information Security Program,” February 24, 2021
+
+22. VA Handbook 6500.2, “Management of Breaches Involving Sensitive Personal 
+Information (SPI),” March 12, 2019 
+23. VA Handbook 6500.5, “Incorporating Security and Privacy into the System 
+Development Lifecycle,” March 22, 2010 
+24. VA Handbook 6500.6, “Contract Security,” March 12, 2010 
+25. VA Handbook 6500.8, “Information System Contingency Planning,” April 6, 2011 
+26. VA Handbook 6500.10, “Mobile Device Security Policy,” February 15, 2018 
+27. VA Handbook 6500.11, “VA Firewall Configuration,” August 22, 2017 
+28. OIT Process Asset Library (PAL), https://www.va.gov/process/ .  Reference Process 
+Maps at https://www.va.gov/process/maps.asp and Artifact templates at 
+https://www.va.gov/process/artifacts.asp 
+29. One-VA Technical Reference Model (TRM) (reference at 
+https://www.va.gov/trm/TRMHomePage.aspx) 
+30. VA Directive 6508, “Implementation of Privacy Threshold Analysis and Privacy 
+Impact Assessment,” October 15, 2014 
+31. VA Handbook 6508.1, “Procedures for Privacy Threshold Analysis and Privacy 
+Impact Assessment,” July 30, 2015 
+32. VA Handbook 6510, “VA Identity and Access Management,” January 15, 2016 
+33. VA Directive and Handbook 6513, “Secure External Connections,” October 12, 
+2017 
+34. VA Directive 6300, “Records and Information Management,” September 21, 2018 
+35. VA Handbook, 6300.1, “Records Management Procedures,“ March 24, 2010 
+36. NIST SP 800-37 Rev 2, “Risk Management Framework for Information Systems and 
+Organizations: A System Life Cycle Approach for Security and Privacy,” December 
+2018 
+37. NIST SP 800-53 Rev. 5, “Security and Privacy Controls for Federal Information 
+Systems and Organizations,” September 23, 2020 (includes updates as of 
+12/10/2020) 
+38. VA Directive 0735, “Homeland Security Presidential Directive 12 (HSPD-12) 
+Program,” October 26, 2015 
+39. VA Handbook 0735, “Homeland Security Presidential Directive 12 (HSPD-12) 
+Program,” March 24, 2014 
+40. OMB Memorandum 05-24, “Implementation of Homeland Security Presidential 
+Directive (HSPD) 12 – Policy for a Common Identification Standard for Federal 
+Employees and Contractors,” August 5, 2005 
+41. OMB Memorandum M-19-17, “Enabling Mission Delivery Through Improved 
+Identity, Credential, and Access Management,” May 21, 2019 
+42. OMB Memorandum, “Guidance for Homeland Security Presidential Directive 
+(HSPD) 12 Implementation,” May 23, 2008 
+43. Federal Identity, Credential, and Access Management (FICAM) Roadmap and 
+Implementation Guidance, December 2, 2011, (NOTE: Part A of the FICAM 
+Roadmap and Implementation Guidance, v2.0, was replaced in 2015 with an updated 
+Architecture (https://arch.idmanagement.gov/#what-is-the-ficam-architecture) 
+44. NIST SP 800-116 Rev 1, “Guidelines for the Use of Personal Identity Verification 
+(PIV) Credentials in Facility Access,“ June 2018
+
+45. NIST SP 800-63-3, 800-63A, 800-63B, 800-63C, “Digital Identity Guidelines,” 
+updated March 02, 2020 
+46. NIST SP 800-157, “Guidelines for Derived PIV Credentials,” December 2014 
+47. NIST SP 800-164, “Guidelines on Hardware-Rooted Security in Mobile Devices 
+(Draft),” October 2012 
+48. Draft National Institute of Standards and Technology Interagency Report (NISTIR) 
+7981, “Mobile, PIV, and Authentication,” March 2014 
+49. VA Memorandum, VAIQ #7100147, “Continued Implementation of Homeland 
+Security Presidential Directive 12 (HSPD-12),” April 29, 2011 (reference 
+https://www.voa.va.gov/documentlistpublic.aspx?NodeID=514) 
+50. IAM Identity Management Business Requirements Guidance document, May 2013, 
+(reference Enterprise Architecture Section, PIV/IAM (reference 
+https://www.voa.va.gov/documentlistpublic.aspx?NodeID=514) 
+51.  VA Memorandum “Personal Identity Verification (PIV) Logical Access Policy 
+Clarification,” July 17, 2019, 
+https://www.voa.va.gov/DocumentView.aspx?DocumentID=4896 
+52. Trusted Internet Connections (TIC) 3.0 Core Guidance Documents, 
+https://www.cisa.gov/publication/tic-30-core-guidance-documents 
+53. OMB Memorandum M-19-26, “Update to the Trusted Internet Connections (TIC) 
+Initiative,” September 12, 2019 
+54. OMB Memorandum M-08-23, “Securing the Federal Government’s Domain Name 
+System Infrastructure,” August 22, 2008 
+55. Sections 524 and 525 of the Energy Independence and Security Act of 2007, (Public 
+Law 110–140), December 19, 2007 
+56. Section 104 of the Energy Policy Act of 2005, (Public Law 109–58), August 8, 2005 
+57. Executive Order 13834, “Efficient Federal Operations,” dated May 17, 2018 
+58. Executive Order 13221, “Energy-Efficient Standby Power Devices,” August 2, 2001 
+59. VA Directive 0058, “VA Green Purchasing Program,” July 19, 2013 
+60. VA Handbook 0058, “VA Green Purchasing Program,” July 19, 2013 
+61. Office of Information Security (OIS) VAIQ #7424808 Memorandum, “Remote 
+Access,” January 15, 2014, 
+https://www.voa.va.gov/DocumentListPublic.aspx?NodeId=28 
+62. Clinger-Cohen Act of 1996, 40 U.S.C. §11101 and §11103 
+63.  “Veteran Focused Integration Process (VIP) Guide 4.0,” January 2021, 
+https://www.voa.va.gov/DocumentView.aspx?DocumentID=4371 
+64. VA Memorandum “Proper Use of Email and Other Messaging Services,” January 2, 
+2018, https://www.voa.va.gov/DocumentListPublic.aspx?NodeId=28 
+65. “DevSecOps Product Line Management Playbook” version 2.0, May 2021, 
+https://www.voa.va.gov/DocumentView.aspx?DocumentID=4946 
+66. NIST SP 500-267B Revision 1, “USGv6 Profile,” November 2020 
+67. OMB Memorandum M-21-07, “Completing the Transition to Internet Protocol 
+Version 6 (IPv6),” November 19, 2020 
+68. Social Security Number (SSN) Fraud Prevention Act of 2017 
+69. Section 240 of the Consolidated Appropriations Act (CAA) 2018, March 23, 2018 
+70. “Veteran Focused Integration Process (VIP) Guide 3.2”, December 2018, 
+https://www.voa.va.gov/DocumentView.aspx?DocumentID=4371
+
+71. “VIP Release Process Guide”, Version 1.4, May 2016, 
+https://www.voa.va.gov/DocumentView.aspx?DocumentID=4411 
+72. “POLARIS User Guide”, Version 1.9, March 2017, 
+https://www.voa.va.gov/DocumentView.aspx?DocumentID=4412 
+73. VA Memorandum “Use of Personal Email (VAIQ #7581492)”, April 24, 2015, 
+https://www.voa.va.gov/DocumentListPublic.aspx?NodeId=28 
+74. VA Memorandum “Updated VA Information Security Rules of Behavior (VAIQ 
+#7823189)”, September, 15, 2017, 
+https://www.voa.va.gov/DocumentListPublic.aspx?NodeId=28 
+75. EHRM-IO Joint Master Test Plan (JMTP) 
+ 
+3.0 SCOPE OF WORK 
+The Contractor shall provide support in the areas of test and evaluation of software, 
+infrastructure, environments, and operations of the IV&V TC, operations for TC environments 
+hosted in VA Enterprise Cloud; and continuous quality process and program management 
+support. 
+ 
+EHRM-IO IntT & OIT each require specific services during the period of performance to support 
+all areas of daily operations. This work includes test and evaluation of the Electronic Health 
+Record solutions, and VA applications in support of VA modernization initiatives. These 
+applications include but are not limited to EHRM solutions and all systems integration to the 
+EHR, Financial Management Business Transformation (FMBT), and other Government-off-the-
+shelf (GOTS) and COTS applications. The required services also involve testing-related 
+activities associated with Legacy VistA (Mumps, Delphi), modernized applications (Java/Oracle, 
+Microsoft.Net/SQL), and other middleware and custom interface and data exchange systems. 
+While OIT TMO and TC may cover any application in this arena, primary focus is on 
+modernization initiatives, data migration, major system interoperability, and data exchange 
+applications while concurrently supporting testing activities during the transition from VA 
+legacy systems. 
+ 
+3.1 ORDER TYPE 
+The effort shall be a hybrid Firm-Fixed-Price (FFP) and Time-and-Materials (T&M) order.   
+ 
+4.0 PERFORMANCE DETAILS 
+ 
+4.1 PERFORMANCE PERIOD 
+The Period of Performance (PoP) shall be 12 months from date of award with four 12-month 
+option periods and one optional task to provide Transition Support starting 30-90 days prior to 
+the end of the period of performance, not to exceed 150 days.  
+ 
+Any work at the Government site shall not take place on Federal holidays or weekends unless 
+directed by the Contracting Officer (CO). (If required, the CO may designate the Contractor to 
+work during holidays and weekends)  
+ 
+There are 11 Federal holidays set by law (USC Title 5 Section 6103) that VA follows:
+
+Under current definitions, five are set by date: 
+ 
+New Year's Day January 1 
+Juneteenth June 19 
+Independence Day July 4 
+Veterans Day November 11 
+Christmas Day December 25 
+ 
+If any of the above falls on a Saturday, then Friday shall be observed as a holiday.  Similarly, if 
+one falls on a Sunday, then Monday shall be observed as a holiday. 
+ 
+The other six are set by a day of the week and month: 
+ 
+Martin Luther King's Birthday Third Monday in January 
+Washington's Birthday Third Monday in February 
+Memorial Day Last Monday in May 
+Labor Day First Monday in September 
+Columbus Day Second Monday in October 
+Thanksgiving Fourth Thursday in November  
+ 
+4.2 PLACE OF PERFORMANCE 
+Tasks performed under this PWS shall be performed at both Contractor and Government 
+facilities, dependent on the project to be tested or required testing support service.  The 
+Contractor shall identify the place of performance in its proposal submission.  
+ 
+All support will be within the Continental United States (inclusive of Alaska, Hawaii, and US 
+Territories). Some tasks under this PWS require the on-site presence of contractor resources and 
+shall be performed at the IV&V Test Center located in Bay Pines, Florida.  There are two to six 
+seats for contractor services at IV&V Test Center.  The Contractor shall prioritize the assignment 
+of resources to the TC based on infrastructure and engineering services requiring physical access 
+to the TC.  
+ 
+Bay Pines Test Center 
+10000 Bay Pines Blvd, Bldg. 37 
+Bay Pines, FL 33744 
+ 
+ 
+4.3 TRAVEL (T&M)  
+The Government anticipates the need for travel events to perform tasks associated with the 
+effort, and to attend program-related meetings or conferences throughout the PoP.  Below are 
+travel estimates for base and option periods, but the number, location and duration of travel 
+events will be based on operational requirements.    
+ 
+Travel will be processed as Other Direct Costs and will not be included under CLIN 5.  Travel 
+will be performed in accordance with Federal Travel Regulations and will be billed after 
+performance.
+
+Base Period 
+EHRM 
+OIT 
+Type of Meeting Location Number 
+of Trips 
+Number of 
+Persons 
+Number of 
+Days 
+EHRM  Testing at 
+Deployment Site 
+(6 events) 
+TBD pending operational 
+requirements  6 3 5 
+EHRM Integrated 
+Testing Team 
+Meetings Washington DC 2 12 5 
+OIT IV&V Strategic 
+Planning Austin, TX 1 9 5 
+ 
+Option Period 1                 
+EHRM 
+OIT 
+Type of 
+Meeting 
+Location Number 
+of Trips 
+Number of 
+Persons 
+Number of 
+Days 
+EHRM  Testing at 
+Deployment 
+Site (6 events) 
+TBD pending operational 
+requirements 6 3 5 
+EHRM Integrated 
+Testing Team 
+Meetings Washington DC 2 12 5 
+OIT IV&V Strategic 
+Planning Austin, TX 1 9 5 
+ 
+Option Period 2 
+EHRM 
+OIT 
+Type of 
+Meeting 
+Location Number 
+of Trips 
+Number of 
+Persons 
+Number of 
+Days 
+EHRM  Testing at 
+Deployment 
+Site (6 events) 
+TBD pending operational 
+requirements 6 3 5 
+EHRM Integrated 
+Testing Team 
+Meetings Washington DC 2 12 5 
+OIT IV&V Strategic 
+Planning Austin, TX 1 9 5 
+ 
+Option Period 3 
+EHRM 
+OIT 
+Type of 
+Meeting 
+Location Number 
+of Trips 
+Number of 
+Persons 
+Number of 
+Days 
+EHRM  Testing at 
+Deployment 
+Site (6 events) 
+TBD pending operational 
+requirements 6 3 5
+
+EHRM Integrated 
+Testing Team 
+Meetings Washington DC 2 12 5 
+OIT IV&V Strategic 
+Planning Austin, TX 1 9 5 
+ 
+Option Period 4 
+EHRM 
+OIT 
+Type of 
+Meeting 
+Location Number 
+of Trips 
+Number of 
+Persons 
+Number of 
+Days 
+EHRM  Testing at 
+Deployment 
+Site (6 events) 
+TBD pending operational 
+requirements 6 3 5 
+EHRM Integrated 
+Testing Team 
+Meetings Washington DC 2 12 5 
+OIT IV&V Strategic 
+Planning Austin, TX 1 9 5 
+ 
+5.0 SPECIFIC TASKS AND DELIVERABLES 
+The Contractor shall perform the following in accordance with VA processes to be provided to 
+the contractor: 
+ 
+5.1 PROJECT MANAGEMENT (FFP) 
+ 
+5.1.1 Contractor Project Management Plan 
+The Contractor shall deliver a Contractor Project Management Plan (CPMP) that lays out the 
+Contractor’s approach, timeline, and tools to be used in execution of the contract. The CPMP 
+shall take the form of both a narrative and graphic format that displays the schedule, milestones, 
+risks, and resource support. The CPMP shall also include how the Contractor shall coordinate 
+and execute planned, routine, and ad hoc data collection reporting requests as identified within 
+the PWS. The initial baseline CPMP shall be concurred upon and updated monthly thereafter. 
+The Contractor shall update and maintain the VA-approved CPMP throughout the period of 
+performance. 
+ 
+Deliverable: 
+A. Contractor Project Management Plan 
+ 
+5.1.2 Contract Key Personnel 
+The Contractor shall assign a single individual to serve as the Contract Program Manager to 
+support the contract, as well as any other key personnel deemed necessary for support of the 
+contract. Any change of key personnel, defined as Program Manager, Project Manager, and 
+Division Leads shall require the Contracting Officer’s Representative (COR) and IETSS VA 
+Senior Management notification and a transition plan to ensure minimum disruption to services 
+delivered via the IETSS contract.
+
+Any personnel the Contractor offers as substitutes shall have capabilities and qualifications at 
+least equal to the key personnel being replaced. If any change to a key personnel position 
+becomes necessary, the Contractor shall immediately notify the VA PM in writing. Whenever 
+possible the Contractor shall notify the VA PM of substitutions of personnel in writing 30 
+calendar days prior to making any change in key personnel. The notification should provide a 
+detailed explanation of the circumstances necessitating the proposed substitution and shall 
+demonstrate that the proposed replacement is of at least substantially equal ability and 
+qualifications as the individual originally proposed for that position. 
+ 
+The Contractor agrees that it has a contractual obligation to mitigate the consequences of the loss 
+of key personnel and shall promptly secure any necessary replacements in accordance with this 
+PWS section. Failure to replace key personnel without a break in performance of the labor 
+category at issue shall be considered a condition endangering contract performance and may 
+provide grounds for default termination. 
+ 
+5.1.3 Reporting Requirements & Management Meetings 
+The Contractor shall provide the COR with Monthly Progress Reports in electronic form in 
+Microsoft Word or Excel formats. The report shall include detailed explanations for each 
+required area and ensure that data is accurate and consistent. These reports shall reflect data as of 
+the last day of the preceding month.  
+ 
+The Monthly Progress Reports shall cover all work completed during the reporting period and 
+work planned for the subsequent reporting period. The report shall also identify any problems 
+that arose and a description of how the problems were resolved. If problems have not been 
+completely resolved, the Contractor shall provide an explanation including its plan and 
+timeframe for resolving the issue. The Contractor shall monitor performance against the CPMP 
+and report any deviations. It is expected that the Contractor will keep in communication with VA 
+accordingly so that when issues arise, they are visible to both parties, to enable solutions to be 
+developed without escalation. The Monthly Progress Report shall organize the report into the 
+EHRM-IO Integration Testing Section & OIT Section.  
+ 
+The Contractor shall provide a weekly status update via email and as applicable during weekly 
+management meetings that summarizes services delivered for the past week, active or open 
+services, issues resolved and issues still under consideration that are relevant for VA 
+management visibility and related to the requirements review. Weekly management meetings are 
+attended by VA and Contractor management and team leads.  The Contractor shall prepare and 
+distribute weekly management meeting notes to the Government. 
+ 
+Deliverable: 
+A. Monthly Progress Report 
+ 
+5.2 TEST AND EVALUATION SUPPORT (T&M) 
+The Contractor shall execute the following tasks in support of EHRM-IO Integrated Testing & 
+OIT.  The Contractor shall support EHRM-IO Integrated Testing & OIT and execute required 
+testing and testing-related activities.  The EHRM-IO program services required from TMO and 
+TC cover the full scope of test and evaluation services needed for the successful implementation
+
+of the EHR COTS solutions across all waves of EHRM-IO deployment.  In addition, the EHRM-
+IO services required from TMO cover the large-scale data migration test and evaluation of 
+legacy production data into the new EHR solutions.  
+ 
+5.2.1 Work Product Reviews   
+The Contractor shall conduct reviews of work products generated by organizations external to 
+TMO, TC and EHRM-IO Integrated Testing.  Documents to be reviewed include task orders, test 
+plans and other documents or products directly or indirectly related to testing activities.  The 
+Contractor shall provide a Work Product Analysis Report that provides a summary of the product 
+reviewed, highlighting positive areas as well as areas of concern. For EHRM-IO products 
+tracked within the EHRM-IO deliverables review system, the Contractor shall conduct reviews 
+of the assigned work products with the review comments being logged within the EHRM-IO 
+deliverables review system. 
+ 
+The current average monthly deliverable review workload is 55, which is expected to ramp up 
+significantly over the period of performance.  
+ 
+Deliverable: 
+A. Work Product Review Analysis Report 
+ 
+5.2.2 Information Gathering/Requirements Analysis 
+The Contractor shall participate as a member of requirements reviews as requested by TMO and 
+TC in coordination with the project team responsible for the SUT. The Contractor shall engage 
+with a project team’s requirement management resources to understand the requirements 
+management process for system under test, to determine processes for establishing traceability 
+between TE test cases and system under test requirements and to provide input and feedback on 
+the testability of the product software requirements under review. The Contractor shall use a 
+specific approach agreed to between TMO and the project team PM prior to beginning work. The 
+Contractor shall coordinate the testability review of the requirements with other members of the 
+review team.  
+ 
+Anticipated number of product requirements reviews for the 12-month base period is 127 for 
+OIT workload.  Anticipated number of EHRM change requests/requirement reviews for the 12-
+month base period is 12 reviews. Future 12-month periods, EHRM reviews, beyond the 12-
+month base period will be driven by the number of workshops usually up to eight per wave of 
+EHRM deployment sites.    
+ 
+5.2.3 Testing Intake Assessment/Criticality Analysis and Risk Assessment 
+The Contractor shall perform the TIA and CARA processes on products and/or workflows for 
+major programs utilizing the predefined processes. The Contractor shall provide detailed risk 
+analyses, documenting the various aspects of competing risks and provide findings to IETSS 
+management.   
+ 
+The Contractor shall:
+
+a. Perform TIA process by accessing the project’s required repositories, such as GitHub, or 
+other VA requirements sources such as contract task orders or performance work 
+statements, or exports of requirements from Vendor requirements repository for COTS 
+products. 
+b. Collaborate with the project team to resolve any issues with the data gathered via the 
+TIA. Review available documentation (e.g. Epics, User Stories) for initial completeness; 
+work with the project team to clarify any questions or issues pertaining to the 
+documentation. 
+c. Generate Product/Project Assessment Summary (PAS) as applicable from TIA processes. 
+The Contractor shall use Government provided templates for the PAS. 
+d. Generate Build Assessment Summary (BAS) as applicable from TIA processes. The 
+Contractor shall use Government provided templates for the BAS. 
+e. Perform CARA process to evaluate, score and assess for criticality and risk of 
+requirements and quality of the SUT documentation.  
+f. Conduct an Analysis Committee Meeting or Analysis Committee Review Briefing 
+(ACM/ACRB) with diverse expertise representation to consider the risk scores and other 
+factors (e.g., availability of testing environment, quality of project documentation, 
+resource availability) to determine the testing services recommended for a specific SUT. 
+g. Generate Risk Analysis Summary (RAS) as applicable as the output of the TIA, CARA 
+and ACM/ACRB processes. The Contractor shall use Government provided templates for 
+the RAS.  
+h. Perform a Quality Assurance Review of the RAS by submitting the RAS into the Change 
+Management tool and executing the QA Review Process for each project/product in the 
+approved project artifact repository. 
+i. File all RAS documents in the approved project artifact repository. 
+ 
+Anticipated numbers of TIAs, CARAs, and RAS for the 12-month period estimated from 
+historical data are shown in the table below. CARA services in support of EHRM are based on 
+historical workflow estimates with each workflow undergoing a CARA process. RAS produced 
+in support of EHRM-IO IntT on EHRM workflows historically have been compiled as batches, 
+thus the delta between CARA performed and RAS produced. 
+  
+ OIT EHRM 
+Testing Intake Assessments (TIA)/Workflows  492 81 
+Criticality Analysis and Risk Assessment 
+(CARA) 
+135 81 
+ Risk Analysis Summary (RAS) 135 40 
+ 
+Table 5.2.3-1: Historical 12-month estimate for TIAs, CARAs, and RAS 
+ 
+Deliverable: 
+A. Risk Analysis Summary 
+ 
+5.2.4 Test Plan Summary 
+The Contractor shall document SUT requirements identified for test services and the overall 
+approach to testing by creating one Test Plan Summary (TPS) for each SUT. The TPS utilizes
+
+the RAS, SUT application documentation, as well as collaboration with the SUT project team 
+with regards to the testing services and approach as inputs. The Contractor shall ensure that the 
+TPS is completed to a level of detail agreed to by the VA Test and Evaluation manager using 
+TMO standards and templates, prior to the start of testing. For EHRM-Integration Office 
+Integrated Testing, the Test Plan Summary is created and maintained within the ALM Test Plan 
+module.  
+ 
+The Contractor shall: 
+ 
+a. Collaborate with the SUT project team to clarify any questions and resolve any issues 
+with SUT documentation and clarify any scope changes. 
+b. Perform analysis of the project team documentation (e.g., Epics, User Stories, 
+Requirements Traceability Matrices, or System Design Documents), as well as the RAS 
+to reach agreement on specific features or functions of project requirements identified for 
+test services.  
+c. Document TPS with requirements identified for testing services.  These requirements, 
+features, and functions shall also be managed and maintained in approved Government 
+test management tools such as Micro Focus Application Lifecycle Management. The TPS 
+shall include: 
+• requirements, features, and functions to be tested  
+• features and/or functions not to be tested 
+• testing services to be delivered as listed in section 5.2  
+• test methodology 
+• test criteria 
+• test deliverables 
+• test schedule 
+• test environments 
+• risks and constraints 
+• a communication matrix identifying points of contact 
+• testing/defects meetings approach 
+d. For OIT Projects, perform a TPS Quality Assurance Review by submitting the TPS into 
+the Change Management tool and executing the artifact QA Review Process. 
+e. File all TPS documents in the approved project artifact repository. 
+f. For EHRM Integration Office Integrated Testing services, follow the EHRM Integrated 
+Testing Test Plan review process by which an integrated Test Plan Summary is created 
+across all EHRM-IO testing teams. Participation in process includes activities such as 
+documenting the test cases planned for Enterprise test execution and participating in test 
+plan reviews. For EHRM-IO Integrated testing services, the Test Plan for the system 
+under test is created and maintained using the test plan modules within the ALM tool 
+suite. 
+ 
+Deliverable: 
+A. Test Plan Summary
+
+5.2.5  Creation of Test Cases & Test Scripts, Test Data 
+The Contractor shall create multiple test cases and scripts for each assigned SUT that adheres to 
+business and technical requirements provided by the project team responsible for the SUT. Test 
+Cases shall include items such as: setup steps, user provision requirements, pre-conditions, input 
+data, user interaction, expected and actual results, and the type of test or technique being 
+performed. Test Case creation and maintenance includes test cases that are used within the Test 
+Automation Services & tool suite,  
+ 
+The Contractor shall: 
+ 
+a. Collaborate with the SUT project team to clarify any questions and resolve any issues 
+related to creation of test cases, test scripts and test data. 
+b. Ensure all Test Scripts and Test Cases are completed for requirements to be tested using 
+Government provided testing management platforms and tools which presently include 
+but may change and are not limited to: Micro Focus ALM, MF Test Tools, Eggplant Test 
+Automation tool suite.  
+c. Maintain all Test Scripts and Test Cases in Government provided test management tools. 
+ 
+Government anticipates requiring 256 (236 EHRM, 20 OIT) SUT for the 12-month period 
+estimated from historical data and projections of EHRM system integrations and EHRM project 
+workstreams.  
+ 
+5.2.6  Execute Test Plan, Analyze Results, & Report Findings 
+The Contractor shall execute the TPS once the Government has approved all testing 
+documentation and create a TAS for each SUT after execution of services. If multiple services 
+(e.g., performance testing, interoperability testing) are executed for a SUT, the individual 
+analysis of findings may be combined into a single Test Analysis Summary. The types, levels, 
+and intensity of testing services are based on the RAS and TPS creation processes. Delivery and 
+acceptance dates for the TPS and TAS are defined in the project schedule for the SUT. The 
+project schedule for the SUT is developed by the Contractor and approved by the Government.  
+Test Executions will take place in the test environments which host the System Under Test. 
+These environments may be a mix of Government and vendor test environments. For example, 
+for EHRM-IO testing, the test environment is an Oracle Health test environment that integrates 
+with both Vendor COTS systems and VA test environments.  
+ 
+Government anticipates requiring 256 (236 EHRM, 20 OIT) SUT for the 12-month period 
+estimated from historical data and projections of EHRM system integrations and EHRM project 
+workstreams.  
+ 
+The Contractor shall: 
+ 
+a. Collaborate with the SUT project team to clarify any questions and resolve any issues 
+related to executing the TPS and delivering test services. 
+b. Create and maintain project schedule within the VA approved schedule tool for each 
+service provided for SUT.
+
+c. Execute the TPS, leveraging tools/techniques such as continuous testing in DevSecOps 
+model, automating testing as appropriate. 
+d. Log, track, manage all Findings/Incidents/Defects in Government test management 
+repository tools. 
+e. Collaborate with the SUT project team and other project stakeholders to reconcile 
+findings/defects and conduct retests as applicable. 
+f. Document all findings, test incidences, and results for each type of testing executed in a 
+TAS. 
+g. Perform a Quality Assurance Review by submitting TAS into the Government Change 
+Management tool and executing the Government QA Review Process. 
+h. File all Test Analysis Summary documents in the approved project artifact repository. 
+ 
+Deliverable: 
+A. Test Analysis Summary 
+ 
+5.2.6.1 Requirements Validation Testing  
+The Contractor shall execute Requirements Validation Testing services specified and 
+documented in the TPS for each SUT.  
+ 
+The Contractor shall: 
+ 
+a. Include all requirements listed in the requirements validation section of the TPS for 
+verification through testing, modeling, demonstration, or other means. 
+b. Incorporate automation tools for development and execution of scripts as 
+needed/appropriate.  
+c. Produce a Requirements Validation analysis (one per SUT cycle) as part of the TAS, 
+documenting the results. 
+d. File all Requirements Validation analysis artifacts in the approved Government artifact 
+repository. 
+ 
+5.2.6.2 Performance Testing 
+The Contractor shall execute Performance Testing services specified and documented in the TPS 
+for each SUT. 
+ 
+The Contractor shall: 
+ 
+a. Execute performance testing, which includes but is not limited to ramp-up tests, stress 
+tests, spike tests, benchmarking, endurance, burst and end-to-end tests. 
+b. Analyze the test results. 
+c. Develop and produce Performance Point Reports prior to completion of the planned full 
+test cycle when significant incidents or product performance requirement failures are 
+encountered during testing. 
+d. Develop and produce a Performance Analysis (one per SUT cycle) as part of the TAS, 
+documenting the test results and analysis of findings at the completion or termination of 
+the planned test cycle, as defined in the SUT project schedule.
+
+e. File all Performance Points and Performance Analysis work products in the approved 
+Government artifact repository. 
+ 
+5.2.6.3 Integration/Interoperability Testing  
+The Contractor shall execute Integration/Interoperability Testing services specified and 
+documented in the TPS for each SUT for both OIT and major programs such as EHRM. 
+ 
+There are over 236 legacy VA systems (spans various topics such as clinical, financial, Veterans 
+benefits) targeted for integration with Electronic Health Record at deployment sites. Additional 
+integrations are identified when site deployments contain new capabilities that require a VA 
+legacy integration. EHRM-IO IntT estimates 50% (118) of systems will require EHRM-IO IntT 
+services during the 12-month period.  It is anticipated that some system interoperability 
+sustainment responsibilities would be transitioning to OIT in the future. 
+ 
+The Contractor shall: 
+ 
+a. Execute integration/interoperability tests. 
+b. Incorporate automation tools for development and execution of scripts as 
+needed/appropriate.  
+c. Analyze the test results. 
+d. Produce an Integration/Interoperability Analysis (one per SUT cycle) as part of the TAS 
+documenting incidents and findings. 
+e. File all Integration/Interoperability Analysis artifacts in the approved Government artifact 
+repository. 
+ 
+5.2.6.4 Test Observation and Validation 
+The Contractor shall perform TOV services specified and documented in the TPS for each SUT. 
+The TOV may be face-to-face, via web conferencing, or hybrid of both as appropriate. Tools 
+such as Microsoft Teams and WebEx can be used in situations where there is time, budget, and 
+staffing constraints. 
+ 
+The Contractor shall: 
+ 
+a. Coordinate and schedule the TOV session with the project team and all necessary 
+stakeholders. 
+b. Prepare observation templates. 
+c. Accomplish TOV through observation of the test execution by the project team on 
+selected requirements, functions, and features. 
+d. Complete the observation templates and notes during the test execution. 
+e. Document results in a TOV Analysis (one per SUT cycle) as part of the TAS. 
+f. File all TOV Analysis artifacts in the approved Government artifact repository. 
+ 
+5.2.6.5 Software Code Quality Check Scanning    
+The Contractor shall execute Software Code Quality Check (SCQC) services specified and 
+documented in the TPS for each SUT. The Contractor shall execute SCQC services using both
+
+automated tools and manual walk-through of the software. SCQC shall include one or more of 
+the following types of analysis: 
+• Static Analysis/Static Security Analysis - analysis of computer software and related 
+documentation that is performed without executing programs built from the software to 
+detect and report weaknesses that can lead to security vulnerabilities. 
+• Dynamic Program Analysis/Dynamic Security Analysis - analysis of computer software 
+and related documentation that is performed by executing programs built from that 
+software on a real or virtual processor to detect and report weaknesses that can lead to 
+security vulnerabilities. 
+• Architectural Analysis - analysis of computer software and related documentation usually 
+performed by manual walk-through of documentation and visual inspection of the code, 
+may be supported by automated tools. 
+ 
+The Contractor shall: 
+ 
+a. Execute combination of agreed upon SCQC services on SUT. 
+b. Analyze the SUT for compliance with VA quality and security standards. 
+c. Scan the source code/executables and inspect artifacts to assess that the SUT satisfies the 
+stated performance, maintainability, and security requirements. 
+d. Document SCQC analysis results (one per SUT cycle) as part of the TAS. 
+e. File all SCQC artifacts in the approved Government artifact repository. 
+f.  
+5.2.6.6 Automated Testing  
+ 
+The Contractor shall utilize automation tools where appropriate for efficiency and effectiveness 
+of the testing. 
+ 
+a. Automate the test preconditions as applicable 
+b. Create automation scripts for both OH and VA side test cases 
+c. Maintain the automated scripts for relevancy 
+d. Expand automated tests for block upgrades, regression tests, domain refreshes, 
+etc. 
+e. Ensure automated tests are domain and site agnostic to the maximum extent 
+possible 
+ 
+5.2.7 Patient Safety Issue (PSI) Testing 
+The Contractor shall execute Patient Safety Issue (PSI) testing on patches by project teams that 
+require a Patient Safety Patch test, or as designated by a major program testing manager. This 
+testing applies either to code patches or to software configuration as classified by the project 
+team, the major program test manager, or the Office of Patient Safety as having potential patient 
+safety concerns.  
+ 
+The Contractor shall:
+
+a. Review the available documentation, including but not limited to the patch description, 
+the service request, and Service Now reports or their equivalent.  
+b. Examine the code or software configuration and perform functional testing on all affected 
+routines, to include pre- and post-installation checks 
+c. Document results in a PSI Testing Report. 
+d. File all Patch or Configuration Analysis artifacts in the approved project artifact 
+repository. 
+ 
+Deliverable: 
+A. Patient Safety Issue (PSI) Testing Report 
+ 
+5.2.8 Section 508 Compliance Support Services   
+The Contractor shall provide Section 508/Accessibility support services for Section 508 test 
+events and test findings as requested for the SUT. 
+ 
+The Contractor shall: 
+ 
+a. Create and maintain the EHRM-IO Accessibility Test repository & configuration in 
+support of the EHRM-IO IntT Section 508 workstreams.   
+b. Perform quality management activities designed to improve accessibility, customer 
+service activities, or other business procedures related to Section 508 requirements. 
+c. In support of OIT projects, when requested by OIT, the contractor shall perform quality 
+assurance and testing activities in support of Section 508 Compliance, on specified OIT 
+products and systems.   
+ 
+5.2.9 Exploratory Testing 
+The Contractor shall execute exploratory testing services documented in the TPS for each SUT.  
+Exploratory testing may include stability analysis of computer software, systems and related 
+documentation that is performed by applying massive amounts of random, invalid or unexpected 
+data to the SUT and monitoring the SUT reaction and responses. 
+ 
+The Contractor shall: 
+ 
+a. Define the scope and duration of the test effort in the Test Plan, including objectives and 
+planned approaches to be used, including time-boxing of specific test events.  
+b. Design and execute tests in parallel (formal documentation of test conditions, test cases, 
+and test scripts is not required). 
+c. Log results as tests are executed to document key aspects of what is tested, any defects 
+found, and recommendations for further testing. 
+d. Document results in an Exploratory Testing summary (one per SUT cycle) as part of the 
+TAS. 
+e. File all Exploratory Testing artifacts in the approved Government artifact repository. 
+ 
+5.2.10 Mobile and Portable Device Application Testing 
+The Contractor shall execute testing on mobile and portable platforms as applicable for each 
+SUT. This testing may be automated or manual and cross multiple platforms.
+
+The Contractor shall: 
+ 
+a. Test the application software on a mobile device (examples include but are not limited to 
+notepads, smartphones, touchscreen devices, etc.) for a SUT for its functionality, 
+usability and consistency to include utilizing portions or subsets of the above listed test 
+types. 
+b. Analyze the test results. 
+c. Document results in a Mobile and Portable Device Application Testing summary (one per 
+SUT cycle) as part of the TAS. 
+d. File all Mobile and Portable Device Application Testing artifacts in the approved 
+Government artifact repository. 
+ 
+5.2.11 Test and Evaluation Management Support 
+The Contractor shall provide test management support with test planning and preparation, test 
+execution, and test closeout and documentation support for SUTs and by updating the weekly 
+status update.  This support also includes the support for test events for SUT by OIT and major 
+program user/stakeholder communities such as EHRM-IO Office of Functional Champion 
+(OFC). All testing services shall be conducted under a formal project management structure. 
+ 
+Specific project methodologies (e.g., waterfall, Agile, etc.) utilized for test engagements may 
+vary as appropriate to specific efforts, but all must include: 
+ 
+a. requirements management 
+b. resource management 
+c. schedule management 
+d. risk/issue management 
+e. change management 
+f. knowledge management 
+g. communication management 
+ 
+The methodologies and processes must follow those supported by the Test Quality and Process 
+Management division of TMO as described in section 5.4. 
+ 
+5.3 TESTING AND TECHNOLOGY SUPPORT 
+ 
+Testing Technology Support provides testing and technology support for OIT, EHRM-IO IntT 
+and major programs. Services include:  architecture, interoperability, VistA Data Service (VDS), 
+creation & maintenance of tools to support data migration testing, and service virtualization 
+functionality.    
+ 
+The Contractor shall: 
+a. Create and maintain Virtual Services Configuration Management and Change 
+Management Plans that define, document, control and implement required 
+changes to virtualized services.
+
+b. Develop and maintain a Virtual Service creation plan that includes the 
+deployment process of virtualized services to the testing community. 
+c. Create and maintain the library of system integration virtualized services available 
+to the testing community.  
+d. Develop a Test Data Creation Process and Strategy that enables data to be 
+prepared and manipulated to support various test scenarios in support of testing 
+requirements. 
+e. Develop and maintain a test data intake process by which requests for test data 
+creation are submitted and processed. 
+f. Provide test data creation services for test environments used in support of 
+EHRM-IO Integrated Testing and any OIT projects as needed. 
+g. Create and maintain test data needed for execution of Test Scripts and Test Cases 
+on the SUT within the database(s) in the testing environment. Examples of test 
+data include patient demographics, clinical orders, order results, patient insurance 
+or other financial information, Veterans eligibility and benefits, revenue cycle 
+accounting etc. 
+h. Incorporate automation tools for test data creation as needed.  
+i. Develop test data management plan addressing the creation, maintenance, 
+assignment/portioning of test data when multiple teams are participating in a 
+system under test.   
+j. Provide Test Patient creation/maintenance services to create and maintain test 
+patient identities that are properly correlated across the EHRM-IO Integrated 
+Testing non-production system of systems comprised of DoD DEERS, VA 
+Master Patient Index, VistA test environments, VA Enrollment Systems, and 
+Oracle Health.  
+k. Develop and maintain testing tools to support testing activities such as the data 
+migration high volume testing extract transform and load tool suite.  
+l. Design and document architecture for designated Major Programs and/or SUT 
+and the interoperability of the SUT. Collaborate with TC and all the necessary 
+stakeholders to create/generate the architecture diagrams for major programs 
+and/or SUT. 
+m. Provide necessary engineering support for Test Automation and any other test 
+activities. 
+n. Analyze project documentation for the application architecture and document the 
+logical requirements necessary for provisioning test environments for Major 
+Programs/SUTs selected by TMO and all supporting components. Integrated 
+testing environments are used by TMO and other testing resources to execute 
+approved Test Plans and verify and validate the operation of SUTs and interfaces 
+with supporting components. These environments are expected to mirror 
+production environments as closely as possible. 
+o. Document the logical requirements for each test environment required for a SUT 
+and supporting components in a Test Environment Logical Requirements (TELR) 
+Document. The TELR shall describe at minimum, logical representations of 
+dependent systems, interfaces, internal and external databases, and all components 
+of the SUT environment, including the hardware, software, and storage
+
+specifications required to build a SUT and any supporting systems (either real or 
+virtual service to mimic the supporting component interface). 
+p. Support the TIA Services team in identifying the criticality and risks for technical 
+requirements, as needed, and provides risk assessment on the product architecture.  
+ 
+• Government anticipates requiring 4-8 Test Environment Logical Requirements 
+documents for the base 12-month period, estimated from historical data. 
+Requirements during option periods are expected to remain steady at 4-8 required 
+TELR per 12-month option period. 
+ 
+• EHRM-IO test data requirements will include collaboration with multiple test 
+communities such as Department of Defense, Oracle Health, EHRM-IO Office of 
+Functional Champion for creation and maintenance of test patient identities, 
+establishment of patient correlations between patient identity systems, clinical and 
+financial/revenue cycle activity data.  
+ 
+Deliverables:  
+A. Architecture Diagrams for Major Programs 
+B. Test Environment Logical Requirements Document 
+C. Test Data Management Plan 
+D. Configuration Management Plan of the Virtual Services 
+E. Change Management Plan of the Virtual Services 
+F. Virtual Service Creation and Deployment Process 
+G. Test Data Creation Process and Strategy 
+H. Interoperability Management Process 
+ 
+5.4 TEST SYSTEMS ENGINEERING AND IMPLEMENTATION SUPPORT 
+(T&M) 
+The Contractor shall execute the following tasks in support of TSEI to include the TC as well as 
+assets in off-site locations such as the Austin Information Technology Center (AITC) and the VA 
+Enterprise Cloud (VAEC) and any future endeavors. The Contractor shall provide the ongoing 
+administration, operations, and maintenance of the legacy and non-legacy databases, hardware, 
+physical plant (e.g., cabling, fiber connections, Uninterrupted Power Supply (UPS), racks and 
+rails), virtual services, and software that make up the TC Infrastructure, along with the 
+applications and tools management required for all divisions and other VA projects as needed. 
+The Contractor shall not be responsible for providing a location for the test center, systems, 
+software, or licenses needed for the operations of the TC.  EHRM-IO test systems engineering, 
+and implementation support includes the tasks below in support of joint VA/DoD/EHRM-IO test 
+environments.  
+ 
+5.4.6 Administration, Architecture, and Engineering  
+The Contractor shall provide configuration of Legacy test databases for testing projects.  
+ 
+The Contractor shall provide network administration for the systems within the TC, including 
+“Cloud” technology used by TC along with any network-related support in future endeavors.
+
+The Contractor shall build and manage test applications and test tools that are hosted in on-
+premises and other “VA Enterprise Clouds” as needed. 
+ 
+Some Contractor(s) shall be physically located onsite at designated workspaces assigned at the 
+Bay Pines offices to support the TC.  
+ 
+The Contractor shall: 
+ 
+a. Update and maintain System Architecture Documentation explaining logical and physical 
+architecture of systems in the TC, including but not limited to networking, power cabling, 
+alternating current (AC) units, UPS Backup. 
+b. Document all planned and unplanned outages with accuracy in detailing issues and 
+resolution, along with root-cause analysis and after-action reports. 
+c. Follow the TC Configuration Management process and document all planned 
+changes/maintenance of all systems supported in the TC. 
+• Plan and manage all configuration changes pertaining to enhancements and 
+expansion of hardware and software in the TC /all other TC managed cloud. 
+• Document test plans and test results related to required configuration changes 
+within the TC /all other TC -managed cloud. 
+d. Collaborate with TTS to document Architecture for designated Major Programs and/or 
+SUT as needed. 
+e. Collaborate with TTS to document the TELR for Major Programs and/or SUT as needed. 
+f. Follow the Risk Management process and document risks for all systems supported in the 
+TC. 
+• Identify and document risks involved in configuration changes. 
+• Identify and document risks involved in constructing new environments. 
+• Identify and document risks/issues involved in migrating to new hardware or 
+software in accordance with VA standards. 
+g. Monitor performance of systems hardware and software using VA Technical Reference 
+Model (TRM) approved tools. 
+h. Document capacity metrics periodically as defined by the client. 
+i. Update and maintain Systems Administration Procedures in support of all activities 
+involved with TC support. 
+j. Participate in lessons learned regarding all major incidents that impact any TC 
+stakeholders. 
+k. File all revised documents in the approved project artifact repository. 
+ 
+TC anticipates revisions of existing System Architecture Documentation and Procedures for the 
+Test Center updated at a minimum twice a year for each performance period.  
+The goal is to expand TC infrastructure to support an increasing number of testing environments, 
+as well as their testing capabilities by increasing the types of testing that can be provided to 
+project teams.
+
+Deliverables: 
+A. Revised TC System Architecture Documentation 
+ 
+ 
+5.4.7 Operations and Maintenance and/or Continuity of Operations 
+Services 
+The Contractor(s) shall physically be located onsite at designated workspace assigned at the Bay 
+Pines offices to support the TC. 
+ 
+The Contractor shall: 
+ 
+a. Provide end-to-end TC systems Operations and Maintenance (O&M) services, patch 
+management, and continuity of operations (COOP) with backup, restoration, and 
+recovery for TC current systems, and all future systems that TC supports in other 
+clouds/environments as needed.  
+b. Perform System activities, including, but not limited to hardware and software 
+installation, systems administration, systems upgrades, preventive and corrective 
+maintenance, and patch and incident management on all TC systems and any future 
+systems in other clouds/environments as needed.  
+c. Perform maintenance on TC legacy systems until system retirement and on replacement 
+systems throughout their life cycle.  
+d. Disaster recovery, COOP, and business contingency planning support. The Contractor 
+shall ensure all TC environments are kept in an active and mirrored state.  
+e. Provide an O&M Plan, in accordance with VA standard templates and industry best 
+practices, including a preventive maintenance plan addressing program specific 
+maintenance processes, procedures, policies, and schedules. 
+f. Administer, manage, and maintain the TC Systems and all other systems supported 
+elsewhere in test, training, pre-production and production environments to ensure they 
+are as closely configured as possible. 
+g. Perform Physical and Virtual Server management, including database servers, 
+application/tools servers, and all other Test Center management servers and all other 
+systems supported elsewhere. 
+h. Support implementation and testing of all enhancements and releases as well as all 
+software and application upgrades, hardware and firmware updates, tools upgrades, and 
+manufacturer released patches including but not limited to security. 
+i. Evaluate, plan, and execute any needed software, hardware, firmware, applications, and 
+tools upgrades/patches/updates/releases. 
+j. Support installation of operating systems, legacy and non-legacy databases, COTS 
+products, applications, and tools. 
+k. Document, test, schedule, and execute regular system administrative activities, including 
+system reboot, back up, recovery, archiving and restoration. 
+l. Update and maintain a Patch Management Plan for all TC servers utilizing existing VA 
+System Center Configuration Manager (SCCM) infrastructure. 
+m. Submit any patches and/or application updates requiring system outage to the TC Change 
+Control Board process for approval.
+
+n. Document successfully tested upgrades/patches in test/preproduction environments to 
+identify both successful and disruptive upgrades/patches and submit the findings to VA 
+Government official. Upon Government approval, apply the necessary upgrades/patches 
+to the TC /all other TC managed cloud environments/systems as planned. 
+o. Ensure any system disruptions mandated by upgrades or patching, include prior 
+notification to VA management, entry of a VA Automatic Notification Report (ANR), 
+and approval of disruption. 
+p. Upon successful completion of a patch effort, update Configuration and Change 
+Management Documents for the TC /all other TC managed cloud system where 
+applicable. 
+q. Monitor TC system hardware using available tools to ensure failures are identified and 
+corrected through vendor warranty and support contracts. 
+r. Support troubleshooting efforts during unplanned TC /all other TC managed cloud 
+system outages to resolve the outage, including all coordination with TC Software and 
+Hardware vendors. 
+s. Prevent unauthorized software, middleware, or hardware upgrades to the TC Systems. 
+t. Monitor application performance using TMO and TC tools during active test cycle to 
+provide necessary feedback to the Application Performance Reports for TE’s test analysis 
+reports. 
+u. Provide a Monthly O&M Status Report that includes patches, upgrades, updates, new 
+installations and maintenance activities as well as findings of all preventive maintenance 
+activities, risks and issues. 
+v. Update and maintain the Disaster Recovery Plan (DRP) for restoration of operations in 
+the event of an incident or disaster (major/minor). 
+w. Update and maintain the Database Backup & Recovery Plan for addressing potential 
+failures and detailed steps required to restore legacy and non-legacy database operations. 
+x. Develop and test processes for recovery and/or reconstruction of legacy and non-legacy 
+databases documented in the Database Backup & Recovery Plan. 
+y. Conduct annual exercise of the DRP. 
+z. Activate the DRP in the case of an incident or disaster and execute the plan. 
+aa. Provide After Action Reports (AARs) following exercises or actual incidents requiring 
+DRP activation. 
+bb. Provision, support, operate, and maintain COOP capabilities per DRP once activated. 
+ 
+There are over 350 servers hosted in TC environments. 
+ 
+Deliverables: 
+A. TC O&M Plan 
+B. Revised Patch Management Plan 
+C. Revised Configuration and Change Management Documents 
+D. TC O&M Monthly Status Report 
+E. Revised Disaster Recovery Plan 
+F. Revised Database Backup & Recovery Plan 
+G. After Action Reports 
+ 
+5.4.8 Database Administration Services
+
+The Contractor shall provide legacy and non-legacy (e.g. Oracle, SQL Server, MySQL, DB2, 
+Cache/VistA and any other new database that the customers need in the future) TC Databases 
+Administration services. Database management shall be performed on all the tools, applications 
+and any other systems TC manages in other cloud environments as needed, which includes 
+applying database patches, upgrading the databases, monitoring the databases and resolving any 
+vulnerabilities reported. The Contractor shall perform Data Storage Management of all 
+repositories and databases on the Storage Area Network (SAN). The Contractor shall perform 
+these support services for the TC databases installed in TC /all other TC -managed cloud test, 
+pre-production and production environments, to include legacy and non-legacy test and training 
+databases. 
+ 
+There are over 180 legacy databases and about 155 non-legacy databases hosted in TC 
+environments. 
+ 
+The Contractor shall: 
+ 
+a. Maintain databases hosted in heterogeneous operating systems including, but not limited 
+to, Windows, UNIX, and LINUX.  
+b. Develop and maintain an TC Database Administration Plan that covers the range of 
+activities required to ensure that databases are available as needed. 
+c. Design and provision legacy and non-legacy test environments required by TMO and non 
+TMO teams. 
+d. Ensure all TC/all other TC-managed cloud databases are kept in an active and mirrored 
+state. 
+e. Install and configure legacy and non-legacy databases on servers and client machines 
+within TC/all other TC-managed cloud environments. 
+f. Support legacy and non-legacy hardware and software migrations and installations. 
+g. Evaluate non-legacy database software releases/patches released by vendors to determine 
+those applicable to the TC/all other TC-managed cloud databases. 
+h. Submit database patching documentation of successfully tested patches for the database. 
+Upon Government approval, release database patches to TC pre-production environment 
+and verify the functionality. 
+i. Upon successful implementation within the TC/all other TC-managed cloud pre-
+production environment, releases patches to the TC/all other TC-managed cloud 
+Production environments and verify and validate the functionality. 
+j. Ensure all VA nationally released legacy patches are applied to TC master copies of 
+legacy databases. 
+k. Evaluate VA application database releases/updates released by application owners 
+applicable to the TC/all other TC-managed cloud environment.  
+l. Test any recommended releases/patches/ and/or released application database updates 
+within the TC/all other TC-managed cloud test and/or training environment; identifying 
+both successful and disruptive releases. 
+m. Submit patches and/or application updates requiring system outage to the TC CCB 
+process for approval. 
+n. Upon successful completion of a patch effort, update Configuration and Change 
+Management Documents where applicable.
+
+o. Monitor the state of TC/all other TC-managed cloud databases using available tools to 
+ensure failures are identified and corrected through vendor warranty and support 
+contracts. 
+p. Provide Database Performance Reports to TC management detailing database failures, 
+issues and resolutions.  
+q. Monitor, and analyze the database performance during the active test cycle; and provide 
+recommendations for performance tuning of the databases as necessary.  
+r. Use established VA Change and Configuration Management processes and tools for all 
+changes to current baseline. 
+s. Ensure application of information security/information assurance policies, principles, and 
+practices. 
+t. Interface with specific tool vendors to resolve software/hardware specific issues. 
+u. Create and maintain clustering necessary for TC/all other TC-managed cloud legacy and 
+non-legacy databases. 
+v. Evaluate and recommend database tools necessary for monitoring and tuning of 
+databases. 
+w. Create and maintain user accounts and database structures as needed. 
+ 
+Deliverables: 
+A. Revised Configuration and Change Management Documents 
+B. TC Database Administration Plan 
+C. Create and maintain Standard Operating Procedures (SOP) 
+  
+5.4.9 Asset Management  
+The Contractor shall maintain, audit, and decommission TC assets. The Contractor shall be 
+physically located onsite at designated workspaces assigned at the Bay Pines offices to support 
+TC. 
+ 
+The Contractor shall: 
+ 
+a. Install and configure asset management tools approved by VA.  
+b. Maintain inventory of TC assets within the asset management tool. 
+c. Record new asset physical information in the asset management tool, including but not 
+limited to model number, manufacturer, specifications, and serial number. 
+d. Update asset information in the asset management tool, including but not limited to lease 
+expiration dates, software maintenance or hardware warranty terms, and license 
+quantities. 
+e. Document asset decommission or disposal in the TC asset management tool. 
+f. Provide ad-hoc reports on current TC assets as requested. 
+g. Perform ad-hoc and scheduled inventory audits and present audit findings. 
+h. Review asset usage and provide usage information to TC management. 
+i. Perform analysis of existing assets to provide efficient utilization recommendations. 
+j. Use established VA Change and Configuration Management processes and tools for all 
+asset changes.  All asset changes must be reflected in the overall TC architecture 
+document.
+
+5.4.10 Tools Assessment  
+The Contractor shall conduct an assessment on each tool in use by TMO and TC, as listed in 
+Table 5.4.5-1: Tools List, to ensure that the tools are most relevant to services executed by TMO 
+and TC and are kept up to date with industry standards. Tools may be added, removed, or 
+replaced during the period of performance. Industry-best software solutions are analyzed using 
+the same comparative methods to determine which offer the best solution for IV&V. Each 
+assessment shall be performed at least annually and shall produce a Tool Assessment Report that 
+addresses in collaboration with the respective sections: 
+ 
+• Current use by TMO and TC 
+• Components of the tool utilized by TMO and TC 
+• Current status of the tool regarding Section 508 Compliance 
+• Current status of the tool as per Technical Reference Model (TRM) or a VA approved 
+site or team  
+• Timing of service renewal date 
+• Market costs associated with the tool (to include license renewal and maintenance costs) 
+• Levels of maintenance support commercially available for the tool 
+• Comparison summary of similar tools currently in the marketplace 
+• Recommendations for new tools 
+ 
+Upon completion of the assessment, the Contractor shall file all Tool Assessment Reports within 
+the SharePoint repository or configuration management tool defined by VA. 
+ 
+Title Manufacturer Version  
+Alexsys Team 2 Alexsys Corporation 2.10 
+Alteryx Alteryx 2020.x 
+ALM Micro Focus 15.5.x  
+Data Center Infrastructure 
+Management 
+Modius  
+DevTest Broadcom 10.7.2 
+Eggplant Functional Eggplant 23.x  
+Fortify Micro Focus 22.2 
+KingswaySoft SSIS 
+Integration Toolkit for 
+Microsoft SharePoint 
+Kingsway Soft 8.0 
+Unified Functional Test Micro Focus 2021.x or above  
+Network Virtualization (NV) Micro Focus 9.13 or above 
+Performance Center 
+Enterprise 
+Micro Focus  2023 or above 
+Performance Center Remote 
+Access 
+Micro Focus 2023 or above 
+LoadRunner/Performance 
+Center Diagnostics for 
+Composite Application 
+ Micro Focus 2023 or above 
+SiteScope Micro Focus 2022.x or above
+
+Burp Suite Professional PortSwigger 1.7.33 
+Toad Data Point Quest 5.6 or above 
+Toad for Oracle Quest 16.2 or above 
+SQL Developer Oracle  20.4 
+NodeJS OpenSource 18.18 or above 
+RHEL Ansible Tower RHEL 3.8.2 
+SoapUI SoapUI 6.4.5 or above 
+SecureCRT & SecureFX 
+Clients 
+VanDyke Software Inc 9.4.1.3102 
+Observer Expert Network Instruments, LLC 16 
+QuerySurge Real-Time Technology 
+Solutions, Procurement 
+Pending 
+* 
+Table 5.4.5-1: Software Tools 
+ 
+Deliverable: 
+A. Tool Assessment Report 
+ 
+5.4.11 Environment/Infrastructure Management Support Services 
+The Contractor shall provide environment/infrastructure management support in environment 
+planning and coordination, environment provisioning, and environment closeout and 
+documentation. This support also includes the support for test events for SUT by OIT and major 
+program user/stakeholder communities. All services shall be conducted under a formal project 
+management structure.  
+ 
+Specific project methodologies (e.g. waterfall, Agile, etc.) utilized for test engagements may 
+vary as appropriate to specific efforts, but all must include: 
+a. requirements management 
+b. resource management 
+c. schedule management 
+d. risk/issue management 
+e. change management 
+f. knowledge management 
+g. communication management 
+ 
+The methodologies and processes must follow those supported by the Test Quality and Process 
+Management division of TMO as described in section 5, as appropriate. 
+ 
+5.5 TEST PROCESS AND QUALITY MANAGEMENT SUPPORT (T&M) 
+The Contractor shall support continuous quality review, assessment, and improvement of 
+capabilities, processes, and services. The Contractor shall provide management and logistics 
+support including technical writing, and knowledge management services. The Contractor shall 
+ensure all TPQM support is integrated across TMO and TC as required.
+
+5.5.6 Process Improvement Support 
+The Contractor shall support the Continuous Quality Improvement Process (CQIP) for TMO and 
+TC processes. The Contractor shall develop and update a CQIP Plan addressing 
+recommendations to design, develop, implement, and use Continuous Quality Improvement 
+(CQI) practices within all applicable Processes, Policies, and Procedures (e.g. TIA, RAS, CARA, 
+Test Process, and Test Center Processes), and OIT Test Processes, Policies, and Procedures 
+which impact TMO and TC (e.g. VIP). The Contractor shall give special consideration to 
+improvements that extend the types and efficacy of software application testing as delineated in 
+the CRR IV&V Service Catalogue. The contractor shall support the alignment of processes 
+across the CRR IV&V organization.  
+ 
+ 
+Figure 5.4.1-1 represents an overview of the TMO & TC Continuous Quality Improvement 
+Process. The Contractor’s CQIP plan shall address each of the areas delineated in the figure 
+below. 
+ 
+ 
+Figure 5.4.1-1: Continuous Improvement Process 
+ 
+The Contractor shall actively pursue innovation through the use of automation to the maximum 
+extent possible, explore and provide updates on Artificial Intelligence (AI) and AI applicability 
+in testing, and work to ensure that manual testing processes are phased out or kept to a minimum.  
+ 
+The Contractor shall review, assess, and explore innovations and improvements to existing 
+artifacts, processes, tools, and techniques. These innovations and improvements shall be 
+managed through submission and processing under the Change Management process. After 
+Government approval of these innovations and improvements, the Contractor shall modify and 
+update existing artifacts, plans, procedures, processes and tools to bring them into compliance. 
+Innovation and improvement submissions within the Change Management process shall be 
+documented in the Monthly Progress report.
+
+The Contractor shall: 
+ 
+a. Develop and update a CQIP Plan that provides for an ongoing assessment, including 
+review of innovative industry practices, so that improvements keep Testing Practices 
+current and optimized. 
+b. Provide updates on efforts to maximize automation while minimizing manual processes 
+and provide updates on proposals to use AI in testing and testing support activities.  
+c. Develop improved procedures and enabling instruments. 
+d. Research, design, and implement continuous process improvement to establish necessary 
+baseline measurements. 
+e. Execute the activities defined in the CQIP plan required to implement continuous quality 
+improvement processes seamlessly across each set of services provided to CRR IV&V. 
+Support implementation of the CQIP Plan across the CRR IV&V organization. 
+f. Conduct discussions among the test stakeholder and Government process owners to 
+ensure only the most promising and applicable methods and practices are considered for 
+CRR IV&V. 
+g. Conduct internal process reviews. 
+ 
+Deliverable: 
+A. Continuous Quality Improvement Process Plan 
+ 
+5.5.7 Lessons Learned and Quality Reviews 
+The Contractor shall conduct lessons learned meetings and quarterly quality reviews to support 
+process improvements.  
+ 
+The Contractor shall: 
+ 
+a. Compile and maintain a Lessons Learned Repository documenting areas in the test 
+process requiring improvement. 
+b. Prepare and run an adjudication process and lessons learned meeting at the end of the 
+engagement for each SUT to analyze Lessons Learned, determine how process 
+improvements can be implemented to address them, and track the status of 
+implementation of each Lesson Learned until closed. 
+c. Create a Lessons Learned Report at the completion of each lessons learned meeting. 
+d. Conduct quarterly quality reviews and present the results of the previous quarters lessons 
+learned, services provided, duration of services, errors and problems identified, and 
+outcomes. 
+e. Prepare Quality Review Reports upon completion of quarterly quality reviews. 
+f. Present Quality Review Reports to TMO & TC and other relevant stakeholders identified, 
+outlining any findings and recommendations for improvement. 
+ 
+Deliverables: 
+A. Lessons Learned Repository 
+B. Lessons Learned Report 
+C. Quality Review Report
+
+5.5.8 Artifact Review 
+The Contractor shall conduct reviews of artifacts (e.g. Process Documents, Guides, Templates, 
+Process Maps, and SharePoint forms) utilizing the QA Artifact Review process and change 
+management SharePoint services as the baseline for a review process. 
+ 
+The Contractor shall: 
+ 
+a. Review artifacts on an ad hoc or planned basis (process documents shall be reviewed 
+annually) considering the quality of artifacts to include at a minimum accuracy, 
+completeness, relevancy, and usefulness. 
+b. Create an Artifact Review Finding Report for each review performed and, if required, an 
+Artifact Corrective Plan of Action. 
+c. Conduct a meeting with applicable stakeholders upon completion of each review to 
+present findings and the corrective plan of action. 
+ 
+TMO anticipates requiring 12 Artifact Review of Findings Reports per 12-month period.  The 
+estimate is based on historical data. 
+ 
+Deliverables: 
+A. Artifact Review Findings Report 
+B. Artifact Corrective Plan of Action 
+ 
+5.5.9 Content Reviews 
+The Contractor shall conduct reviews of EHRM and OIT associated content   to provide a 
+continuous method of ensuring site information remains current and relevant. If content or 
+material stored sites is no longer accurate or applicable, the Contractor shall note this in the 
+Monthly Progress Report for subsequent distribution to applicable stakeholders for correction, 
+archival, or removal per established change management procedures. 
+ 
+5.5.10 Operations and Management support 
+The Contractor shall support TMO Government operations of budget management and tracking; 
+acquisition of testing infrastructure, software and operational tools; and establish and maintain 
+work processes to support these activities. 
+ 
+5.5.11 Metric and Measures Support 
+The Contractor shall support and maintain the metrics and measures program. The Contractor 
+shall define, document, and implement the methods, processes and metrics to assess the 
+effectiveness of processes, applications, documentation, and systems. These metrics shall 
+measure the application operations and maintenance activities from a schedule and performance 
+perspective. 
+ 
+The Contractor shall: 
+ 
+a. Review processes and identify measures to be captured. Measures are data elements 
+necessary for management to correlate and analyze data for process control, improvement
+
+opportunities, workload trending and forecasting. Current measures include but are not 
+limited to: 
+ 
+• # Testing Intake Assessment created 
+• Project Size (by requirement) 
+• Project Risk as assessed by CARA scoring process 
+• # CARA performed 
+• # RAS delivered 
+• # Test Analysis Summary (TAS) delivered 
+• # of projects having services recommended 
+• # days to produce RAS 
+• # adjusted days to produce RAS 
+• # Test Center Service Requests by request type 
+ 
+b. Develop metrics from available measures to support continuous improvement by 
+establishing objectives, standards, and process control. 
+c. Identify the subset of measures and metrics that specifically support continuous quality 
+improvement process objectives and standards. 
+d. Apply methods and processes to track and evaluate products and where appropriate, 
+make recommendations to management for adjustments to measures and metrics that 
+support improvement and workload resource optimization. 
+e. Update the Measurement and Metrics Plan with approved additions, changes and 
+deletions. The plan documents the measures/metric methodology and catalogs the 
+measures and metrics being collected. 
+f. Maintain automated solutions for capturing, charting, and disseminating metrics and 
+measures in a centralized repository/metrics portal and dashboard reporting mechanism 
+(currently SharePoint services) that provides visibility into metrics and measures being 
+collected and displays metrics graphically, including process control charts tied to 
+continuous quality improvement process objectives. 
+g. The contractor shall support the alignment of processes across the CRR IV&V 
+organization.  
+h. The contractor shall review, assess and recommend improvements, connections, 
+alignments across CRR IV&V sections. Recommend how to implement metric processes 
+and reporting across all CRR IV&V sections.  
+ 
+Deliverable: 
+A. Updated Measurement and Metric Plan 
+ 
+5.5.12 CQIP Briefings 
+The Contractor shall develop Continuous Quality Improvement Process (CQIP) Orientation and 
+Overview Briefings (estimated four per year) to communicate CQIP processes, policies, and 
+procedures. These briefings provide overview and education of the key concepts, process, 
+policies, and procedures of the subject. The Contractor shall be prepared to present briefings to 
+VA and Contractor resources. Briefings prepared and/or presented shall be noted in the Monthly 
+Progress Report. Briefing material will be filed in the Knowledge Management Repository.
+
+Deliverable: 
+A. CQIP Orientation and Overview Briefing 
+ 
+5.5.13 Root Cause Analysis with Corrective Action Plan 
+The Contractor shall analyze and assess anomalies and incidents that affect delivery of Services 
+and Operations to identify the root cause of the anomaly or incident. Anomalies and incidents 
+that undergo a root cause analysis may be identified by the VA management team or 
+recommended by the Contractor to VA management. The Contractor shall provide one Root 
+Cause Analysis Incident Report per incident containing a description of the incident, cause of 
+incident, impact of incident on services and operations, and any corrective actions required. 
+ 
+TMO anticipates requiring two Root Cause Analysis Incident Reports in a   12-month period, 
+estimated from historical data. 
+ 
+Deliverable: 
+A. Root Cause Analysis Incident Report 
+ 
+5.5.14 Technical Writing Services 
+The Contractor shall support the creation and maintenance of TMO  and TC artifacts (e.g. 
+meeting minutes, test plans, lesson learned reports) to both internal and external stakeholders and 
+all items contained in the Knowledge Management System as detailed in section 5.4.9. 
+ 
+The Contractor shall: 
+ 
+a. Create required artifacts such as a document, webpage, or help-based product including 
+links, table of contents and index, final screen captures and graphics, and cross-references 
+in accordance with VA documentation standard operating procedures. This shall include 
+content for both customer-facing SharePoint pages and internal SharePoint pages. 
+b. Maintain existing artifacts and content to improve accuracy, currency, and usability. 
+ 
+5.5.15 Knowledge Management Services 
+The Contractor shall capture and manage information to preserve knowledge and continuity of 
+operations. This shall include executing and updating processes to capture, organize, and share 
+knowledge across the organization. 
+ 
+The Contractor shall: 
+ 
+a. Identify knowledge management categories to include, at a minimum, TMO and TC 
+processes, standards, lessons learned, and templates. 
+b. Identify knowledge area processes, plans, lessons learned, and best practices common to 
+IV&V or best practices within IV&V. 
+c. Classify artifacts for each knowledge category, including the authoritative source for the 
+artifact, artifact owner or point of contact, status (e.g., needs review, needs update, out of 
+scope, completed); this information shall be stored in a mapped knowledge repository to 
+facilitate easy recovery.
+
+d. Review and update knowledge repository information when necessary. 
+e. Archive obsolete artifacts, maintaining historical versions for reference and recovery. 
+f. Maintain a centralized, online knowledge base of information using existing tools 
+(Microsoft SharePoint, HP Quality Center, and Alexsys Team 2) to support (1) testing 
+intake assessment, test execution, defect reporting, test reporting; (2) risk management, 
+(3) change and configuration management, and (4) test center service requests. 
+ 
+The current ETS Knowledge Management System contains artifacts identified, archived, or 
+under review categorized as follows: 
+ 
+Best Practices 2 
+Checklists 3 
+Lessons Learned 1 
+Lists 2 
+On-Boarding/Off-Boarding 7 
+Project-Related Plans 8 
+PM Support 4 
+Processes 70 
+Reports 2 
+User Guides 1 
+Standard Operating 
+Procedures 10 
+Table 5.4.9-1: Knowledge Management Artifacts 
+ 
+5.5.16 Process Management Development and Implementation 
+The Contractor shall develop and implement processes for service execution and delivery across 
+the entire organization. Processes required cover a broad spectrum but may be summarized as 
+follows (sub-points are example processes for the broader management areas): 
+ 
+A. Requirements Management 
+1. Gathering information required to achieve overall goals. 
+2. Determining scope of work to support resource and schedule management. 
+a. Confirming availability of Contractor resources and resources for provisioning the 
+environment based on scope of work. 
+b. Provisioning environments to include tools, operating systems, hardware and 
+infrastructure as well as any upgrades necessary to support the environment. 
+c. Coordinating and facilitating test environment changes. 
+d. Ensure unneeded test environments and resources are returned to system owners 
+for decommissioning or repurposing. 
+B. Schedule management  
+a. Creating Resource Loaded Schedules including work breakdown structures with 
+mapped task dependencies/relationships and estimated effort hours in the 
+approved VA enterprise project management tool. 
+b. Establishing schedule baselines to support tracking change.
+
+c. For metrics and process purposes, recording actual effort hours for all Contractor 
+resources in the project management tool. 
+d. Monitoring progress to plan in the project management tool and reporting status 
+on weekly regular basis. 
+e. Monitoring and controlling completion and delivery of artifacts. 
+C. Risk and Issue Management 
+a. Managing risks and issues relevant to delivery of services, to include creation of 
+risk management plans, risk identification and processing, participation in risk 
+review boards, and weekly status reporting.  
+b. Establishing processes to rapidly identify and report emergent risks and issues  
+c. Confirming all risks and issues are mitigated, addressed, or transferred to 
+appropriate stakeholders according to established risk and issue management 
+procedures. 
+D. Change Management 
+a. Managing change in schedules, plans, and other relevant artifacts in a timely 
+fashion appropriate to PM methodologies, to include change control tracking, 
+change control review/approval, and regular status reporting. 
+b. Confirming all change requests are completed according to established change 
+management procedures. 
+c. Participating in lessons learned surveys and meetings to collect data from 
+participants, to include at a minimum what went well, what went wrong, and any 
+recommendations as well as any new workflows, business processes, and business 
+process flow changes discovered. This information shall be documented in a 
+Lessons Learned Report as described in section 5.4.2. 
+E. Knowledge Management 
+a. Confirming all artifacts are properly logged in the knowledge management 
+repository. 
+F. Communication Management 
+a. Ensuring timely communication both internal to an effort as well as to external 
+stakeholders. 
+ 
+Process integration is required across all IV&V organizations, as well as to external 
+organizations that engage IV&V for services.  
+5.5.12 ASSESSMENT & ANALYSIS FOR STRATEGIC AND TACTICAL 
+PLANNING AND TECHINICAL SUPPORT OF OIT & EHRM-IO (T&M) 
+Contractor shall: 
+• provide assessment and analysis services for identification of impacts and areas of change 
+and improvements in support of OIT & EHRM-IO strategic and tactical objectives.  
+• Identify gaps in processes that result from organizational changes and improvement areas 
+for processes.  
+• Provide assessment and analysis for development of a  risk management program within 
+OIT IVV that supports all division.
+
+5.6  OPTIONAL TASK - TRANSITION SUPPORT (T&M) 
+Activities related to this task will be performed if a Contractor other than the incumbent 
+Contractor is awarded the new contract.  The Contractor shall identify and provide government 
+management with a roster of key or critical personnel who will perform as the contract transition 
+team no later than 15 days after exercise of the optional task.  The roster must contain a 
+sufficient number of personnel with skillsets required to continue operations through the 
+transition period.  Division resources will not be constrained to support only one division and 
+could be cross-leveled as needed to cover transition requirements, at the discretion of the 
+transition team lead in coordination with the Government.  
+ 
+The Contractor shall prepare a comprehensive Transition Plan within 21 calendar days of 
+exercise of the optional task.  The Transition Plan will address required tasks for a period of up 
+to 150 days. The Transition Plan shall enable a deliberate transition with minimal disruption to 
+services. 
+ 
+The Transition Plan must be comprehensive, beginning with administrative onboarding of 
+resources and ending with a full operational handoff to the new contract team.   
+ 
+The Transition Plan will cover at a minimum: 
+ 
+• Resource Onboarding  
+• Operational Overview  
+• Knowledge Management  
+• Team/Division Integration  
+• Division Process Immersion 
+• Familiarization Training on Tool Sets 
+• Schedule Development and Management 
+• Risk Management  
+• Phased Operational Handoff 
+  
+The Transition Plan shall include an itemized activity matrix that links tasks to members of the 
+contract transition team. The matrix shall identify the required task, level of risk to services, 
+resources identified to perform the task, and artifacts associated with tasks.  The matrix shall 
+cover the scope of transition to include accountability and disposition of Government furnished 
+equipment, Government furnished information, hardware, software and artifacts (historical 
+documents, processes, procedures, knowledge management tools, manuals, code, etc.). 
+ 
+Deliverables: 
+A. Contract Transition Team Roster 
+B. Transition-Out Plan
+
+TYPE OF CONTRACT(S)  
+ 
+  Firm Fixed Price 
+  Cost Reimbursement 
+  Labor-Hour (Time & Materials) 
+  Time-and-Materials 
+  Other __________ 
+ 
+SCHEDULE FOR DELIVERABLES   
+ 
+Task Deliverable ID  Deliverable Description 
+5.1.1 A 
+ 
+PM - Contractor Project Management Plan 
+Due thirty days after contract award and updated monthly thereafter. 
+Electronic submission to:  VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+5.1.3 A PM - Monthly Progress Report 
+Due the seventh day of each month throughout the period of performance (PoP). 
+Electronic submission to:  VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.2.1 A PM - Work Product Review Analysis Report 
+Due the seventh day of each month throughout the period of performance (PoP). 
+Electronic submission to:  VA PM, COR 
+Inspection:  destination 
+Acceptance: destination 
+5.2.3 A TE - Risk Analysis Summary 
+Due ad hoc throughout the period of performance (PoP). 
+Electronic submission to:  VA PM, COR 
+Inspection:  destination 
+Acceptance: destination 
+ 
+5.2.4 A TE - Test Plan Summary 
+Due ad hoc throughout the period of performance (PoP). 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.2.5 A TE - Test Analysis Summary 
+Due ad hoc throughout the period of performance (PoP). 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination  
+5.3 A TE- Patient Safety Issue (PSI) Testing Report  
+Due ad hoc throughout the period of performance (PoP). 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination
+
+Task Deliverable ID  Deliverable Description 
+ 
+5.3 A TTS – Architecture Diagrams for Major Programs 
+Due as required throughout the period of performance (PoP). 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.3 B TTS – Test Environment Logical Requirements Document 
+Due as required throughout the period of performance (PoP). 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.3 C TTS – Test Data Management Plan  
+Due by the seventh day of each month throughout the period of performance (PoP). 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.3 D TTS – Configuration Management Plan of the Virtual Services 
+Due by the seventh day of each month throughout the period of performance (PoP). 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.3 E TTS – Change Management Plan of the Virtual Services 
+Due by the seventh day of each month throughout the period of performance (PoP). 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.3 F TTS – Virtual Service Creation and Deployment Process 
+Due by the seventh day of each month throughout the period of performance (PoP). 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.3 G TTS – Test Data Creation Process and Strategy 
+Due by the seventh day of each month throughout the period of performance (PoP). 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.3 H TTS – Interoperability Management Process 
+Due by the seventh day of each month throughout the period of performance (PoP). 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.4.1 A TSEI – Revised TC System Architecture Documentation 
+Due annually, by the seventh day of the month following contract or option period award, or 
+when architecture changes require updates. 
+Electronic submission to: VA PM, COR
+
+Task Deliverable ID  Deliverable Description 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+ 
+5.4.2 A TSEI – TC O&M Plan 
+Due annually, by the seventh day of the month following contract or option period award  
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+ 
+ 
+ 
+ 
+5.4.2 
+ 
+ 
+ 
+ 
+B 
+TSEI – Revised Patch Management Plan  
+Due annually, by the seventh day of the month following contract or option period award  
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.4.2 C TSEI – Revised Configuration and Change Management Documents  
+Due annually, by the seventh day of the month following contract or option period award, 
+and as needed Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.4.2 D TSEI – TC O&M Monthly Status Reports  
+Due by the seventh day of each month throughout the period of performance (PoP). 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.4.2 E TSEI – Revised Disaster Recovery Plan 
+Due annually, by the seventh day of the month following contract or option period award  
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.4.2 F TSEI – Revised Database Backup & Recovery Plan  
+Due annually, by the seventh day of the month following contract or option period award, 
+and as needed.  
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.4.2 G TSEI – After Action Reports  
+Due ad hoc throughout the period of performance (PoP). 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.4.3 A TSEI – Revised Configuration and Change Management Documents  
+Due annually, by the seventh day of the month following contract or option period award, 
+and as needed.
+
+Task Deliverable ID  Deliverable Description 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.4.3 B TSEI – TC Database Administration Plan  
+Due annually, by the seventh day of the month following contract or option period award, 
+and as needed.  
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.4.3 C TSEI – Create and maintain Standard Operating Procedures  
+Due annually, by the seventh day of the month following contract or option period award, 
+and as needed.  
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.4.5 A TSEI – Tool Assessment Report 
+Due the seventh day of the month following contract or option period award, and quarterly 
+by the seventh day of the month.  
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.5.1 A TPQM – Continuous Quality Improvement Process Plan  
+Due three business days after the end of each quarter 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.5.2 A TPQM – Lessons Learned Repository  
+Due – Ongoing requirement to maintain 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.5.2 B TPQM – Lessons Learned Report 
+Due 30 business days after each Lessons Learned Meeting 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.5.2 C TPQM – Quality Review Report  
+Due three business days after the quarterly quality review  
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.5.3  A TPQM – Artifact Review Findings Report 
+Due 15 days after the end of each month 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination
+
+Task Deliverable ID  Deliverable Description 
+ 
+5.5.3 B TPQM – Artifact Corrective Plan of Action  
+Due 15 days after the end of each month 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+ 
+ 
+5.5.6 
+ 
+ 
+A 
+ 
+ 
+TPQM – Updated Measurement and Metric Plan 
+Due the seventh day of the month following contract or option period award, but actual 
+metrics are ongoing updates as required on SharePoint site. 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.5.7 A TPQM – CQIP Orientation and Overview Briefing 
+Due three business days after the beginning of the month 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.5.8 A  TPQM – Root Cause Analysis Incident Report  
+Due 15 calendar days after completion of the Root Cause Analysis 
+Electronic submission to: VA PM, COR 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.6  A Optional Task Transition – Contract Transition Team Roster 
+Due within 15 calendar days of the date the optional task is exercised 
+Electronic submission to: VA PM, COR, CO 
+Inspection:  destination 
+Acceptance:  destination 
+ 
+5.6 B Optional Task Transition – Transition-Out Plan  
+Due within 21 calendar days of the date the optional task is exercised 
+Electronic submission to: VA PM, COR, CO 
+Inspection:  destination 
+Acceptance:  destination
+
+POINTS OF CONTACT  
+ 
+VA Program Manager: 
+Name: Len Guldenpfennig  
+Address: Remote -Colorado 
+Voice:  (720) 435-9188   
+Email: len.guldenpfennig@va.gov  
+ 
+Contracting Officer’s Representative: 
+Name: Dewitt Hardee   
+Address:  Remote - Alabama  
+Voice: (205) 552-3458  
+Email: dewitt.hardee@va.gov  
+ 
+Contracting Officer: 
+Name: Corey Muir  
+Address: Remote - Utah  
+Voice: (848) 377-5173   
+Email: corey.muir@va.gov 
+ 
+Contract Specialist:  
+Name: Sandra Vargo 
+Address: Remote-New Jersey 
+Email:  Sandra.vargo@va.gov
+
