@@ -183,7 +183,7 @@ class DynamicFormGenerator(QWidget):
         # Create a horizontal layout for each field
         field_layout = QHBoxLayout()
         if key not in ['', ' ', None]:
-            key_input = QLineEdit(str(key))
+            key_input = QLabel(str(key))
         else:
             # If the key is empty or None, we dont want a key input field
             key_input = QLabel("")
@@ -216,18 +216,6 @@ class DynamicFormGenerator(QWidget):
                 # it's a non-empty list, add the text edit and join the items
                 input_widget = QTextEdit()
                 input_widget.setPlainText("\n".join(map(str, value)))
-                
-        # elif isinstance(value, dict):
-        #     # Create a group box for nested dictionary
-        #     group_box = QGroupBox(key)
-        #     nested_layout = QVBoxLayout()
-        #     group_box.setLayout(nested_layout)
-            
-        #     # Recursively create fields for nested dictionary
-        #     self.create_nested_fields(value, nested_layout, key)
-            
-        #     field_layout.addWidget(group_box)
-        #     return group_box
         
         else:
             return None  # Unsupported type
