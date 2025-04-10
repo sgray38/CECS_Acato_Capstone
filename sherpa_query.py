@@ -51,10 +51,9 @@ def summarize_text(text: str) -> str:
     return summary[0]['summary_text'] if summary else "No summary available."
 
 if __name__ == "__main__":
-        # input_text will be the chunk of text to summarize in the actual application
-        input_text = '''The Contractor will be required to design, develop, or operate a system of records on individuals, to accomplish 
-                        an agency function subject to the Privacy Act of 1974, Public Law 93-579, December 31, 1974 (5 U.S.C. 552a) and 
-                        applicable agency regulations. Violation of the Act may involve the imposition of criminal penalties.'''
+        
+        #TODO: Connect input_text to output of RAG
+        input_text = rag_output
         summary = summarize_text(input_text)
         print("Summary:")
         print(summary)
