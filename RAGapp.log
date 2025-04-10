@@ -1,0 +1,15 @@
+2025-04-10 18:18:04,772 - INFO - RAG Application started. prompting for directory.
+2025-04-10 18:18:04,772 - INFO - clicked signal: load_files
+2025-04-10 18:18:11,015 - INFO - currentTextChanged signal: BadFit
+2025-04-10 18:18:15,586 - INFO - clicked signal: handle_query
+2025-04-10 18:18:17,535 - INFO - clicked signal: summarize_response
+2025-04-10 18:18:20,435 - INFO - currentTextChanged signal: GoodFitWithPartners
+2025-04-10 18:18:26,813 - INFO - clicked signal: handle_query
+2025-04-10 18:18:41,672 - INFO - clicked signal: load_files
+2025-04-10 18:18:44,680 - INFO - currentTextChanged signal: 
+2025-04-10 18:18:45,437 - INFO - currentTextChanged signal: FPAC Conservation Agile Release Train PWS.1729019986846.pdf
+2025-04-10 18:18:46,620 - INFO - currentTextChanged signal: Request for Quotation.pdf
+2025-04-10 18:18:48,526 - INFO - currentTextChanged signal: 2024_11_15_R_G1ab8GqBwjXy42h_1.pdf
+2025-04-10 18:18:49,269 - INFO - currentTextChanged signal: 2.2.1 Attachment 1 GMMAD BPA PWS 112724.1732744126731.pdf
+2025-04-10 18:18:51,722 - INFO - clicked signal: handle_query
+2025-04-10 18:18:52,587 - INFO - clicked signal: handle_query
