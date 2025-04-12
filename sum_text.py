@@ -5,7 +5,7 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
     handlers=[
-        logging.FileHandler("sum_text.log"),
+        logging.FileHandler("sum_text.log",encoding='utf-8'),
         logging.StreamHandler(sys.stdout)
     ]
 )
@@ -13,30 +13,38 @@ logger = logging.getLogger(__name__)
 # Load a summarization pipeline
 summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
 
-def split_text_into_chunks(text: str, words_per_chunk: int = 1024) -> list:
-    """Split the input text into chunks that fit within the threshold of words_per_chunk."""
-    words = text.split()
+def split_text_into_chunks(text: str, sentences_per_chunk: int = 3) -> list:
+    """Split the input text into chunks that fit within the threshold of sentences_per_chunk."""
+    sentences = text.split("\n")
+    # Remove empty sentences
+    sentences = [s for s in sentences if s.strip()]
     chunks = []
-    for i in range(0, len(words), words_per_chunk):
-        chunks.append(" ".join(words[i:i + words_per_chunk]))
-        logger.info(f"Chunk created with {len(chunks[-1].split())} words.")
-        # print(f"Chunk text: {chunks[-1]}")
+    current_chunk = []
+    for sentence in sentences:
+        if len(current_chunk) < sentences_per_chunk:
+            current_chunk.append(sentence.strip())
+        else:
+            chunks.append(" ".join(current_chunk))
+            current_chunk = [sentence.strip()]
+            logger.info(f"Created chunk: {len(chunks)} of size {len(chunks[-1].split())} words.")
+            
+    if current_chunk:
+        chunks.append(" ".join(current_chunk))
+        logger.info(f"Created final chunk: {len(chunks)} of size {len(chunks[-1].split())} words.")
     return chunks
 
 def summarize_text(text: str) -> str:
     """Summarize the input text using the summarization pipeline."""
     try:
         # Split text into chunks if it exceeds the word limit
-        chunks = split_text_into_chunks(text.strip(), words_per_chunk=142)  # Use 142 as a safe limit for BART attention
+        chunks = split_text_into_chunks(text.strip(), sentences_per_chunk=7)  # Use 142 as a safe limit for BART attention
         summaries = []
         
         for chunk in chunks:
-            if len(chunk.split()) > 10:  
-                summary = summarizer(chunk)
-                summaries.append(summary[0]['summary_text'] if summary else "No summary available.")
-                logger.info(f"Processed chunk: {chunk[:50]}...")
-            else:
-                summaries.append(chunk)
+            summary = summarizer(chunk)
+            summaries.append(summary[0]['summary_text'] if summary else "No summary available.")
+            logger.info(f"Processed chunk: {chunk[:50]}...")
+            
         
         # Combine all summaries into a single summary
         return "\n".join(summaries)

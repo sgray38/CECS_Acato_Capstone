@@ -15,7 +15,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
-def query_document(query: str, context: list, single=False) -> str:
+def query_document(query: str, context: list) -> str:
     """Query the document with the given query string and return a response."""
     try:
         # Encode the query and the context
@@ -25,25 +25,35 @@ def query_document(query: str, context: list, single=False) -> str:
         # Compute cosine similarity
         cosine_scores = model.similarity(query_embedding, context_embedding)
         # get top results
-        if single:
-            top_results = torch.topk(cosine_scores, k=1)
-            response = f"{context[top_results.indices[0][0]]} (Score: {top_results.values[0][0].item():.4f} | line {top_results.indices[0][0]})"
-            return response if top_results.values[0][0].item() > 0.29 else "No relevant context found."
-        else:
-            top_results = torch.topk(cosine_scores, k=len(context)//2 if len(context) > 5 else len(context))
-            response = []
-            # generate response based on scores and indices
-            scored_context = zip(top_results.values[0], top_results.indices[0])
-            # sort by index to maintain original order
-            scored_context = sorted(scored_context, key=lambda x: x[1].item())
-            for score, idx in scored_context:
-                if score.item() > 0.29:  # threshold for relevance
-                    response.append(f"{context[idx]}")
-                    # (Score: {score.item():.4f} | line {idx})")
-            return "\n".join(response) if response else "No relevant context found."
+        top_results = torch.topk(cosine_scores, k=len(context)//2 if len(context) > 5 else len(context))
+        response = []
+        # generate response based on scores and indices
+        scored_context = zip(top_results.values[0], top_results.indices[0])
+        # sort by index to maintain original order
+        scored_context = sorted(scored_context, key=lambda x: x[1].item())
+        for score, idx in scored_context:
+            if score.item() > 0.29:  # threshold for relevance
+                response.append(f"{context[idx]}")
+                # (Score: {score.item():.4f} | line {idx})")
+        return "\n".join(response) if response else "No relevant context found."
     except Exception as e:
         logger.error(f"Error during querying: {e}")
         return f"Error during querying: {e}"
+
+def get_top_result(context, query, n_results=1):
+    query_embedding = model.encode(query, convert_to_tensor=True)
+    context_embedding = model.encode(context, convert_to_tensor=True)
+    cosine_scores = model.similarity(query_embedding, context_embedding)
+    top_results = torch.topk(cosine_scores, k=n_results)
+    # get a list of top results as tuples of (score, index)
+    scored_context = zip(top_results.values[0], top_results.indices[0])
+    scored_context = sorted(scored_context, key=lambda x: x[0].item(), reverse=True)
+    # join the top results into a response string with score
+    response = []
+    for score, idx in scored_context:
+        if score.item() > 0.29:  # threshold for relevance
+            response.append(f"{context[idx]} (Score: {score.item():.4f} | line {idx})")
+    return "\n".join(response) if response else "No relevant context found."
     
 if __name__ == "__main__":
     # Example query and context

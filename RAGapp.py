@@ -3,10 +3,10 @@ import sys
 import os
 import logging
 from llmsherpa.readers import LayoutPDFReader
-from PyQt6.QtWidgets import (QApplication, QMainWindow, QVBoxLayout, QHBoxLayout,
-                             QPushButton, QTextEdit, QWidget, QLabel, QListWidget, QLineEdit, QCheckBox)
+from PyQt6.QtWidgets import (QApplication, QMainWindow, QVBoxLayout, QHBoxLayout, QToolBar, QFileDialog, QSpinBox,
+                             QPushButton, QTextEdit, QWidget, QLabel, QListWidget, QLineEdit, QCheckBox, QDialog)
 from PyQt6.QtCore import QThread, pyqtSignal
-from PyQt6.QtWidgets import QFileDialog
+from PyQt6.QtGui import QAction
 # get our custom summarization module and query module
 import sum_text
 import query_doc
@@ -46,16 +46,20 @@ class QueryWorker(QThread):
     finished = pyqtSignal(str)  # Signal to emit the query result
     error = pyqtSignal(str)     # Signal to emit error messages
 
-    def __init__(self, query, context, single_response):
+    def __init__(self, query, context, qa_response, n_results=1):
         super().__init__()
         self.query = query
         self.context = context
-        self.single_response = single_response
-
+        self.qa_response = qa_response
+        self.n_results = n_results
+        
     def run(self):
         """Perform the query processing in a separate thread."""
         try:
-            response = query_doc.query_document(self.query, self.context, single=self.single_response)
+            if not self.qa_response:
+                response = query_doc.query_document(self.query, self.context)
+            else:
+                response = query_doc.get_top_result(self.context, self.query, self.n_results)
             self.finished.emit(response)  # Emit the query result
         except Exception as e:
             self.error.emit(f"Error during querying: {e}")
@@ -65,12 +69,23 @@ class MainWindow(QMainWindow):
     cwd = os.getcwd()
     reader = LayoutPDFReader(llmsherpa_api_url)
     parsed_doc = None
-    single_response = False
+    qa_response = False
+    n_results = 1
+    
     # TODO: add save functionality for summary text
     def __init__(self):
         super().__init__()
         self.setWindowTitle("RAG Application")
         self.setGeometry(100, 100, 800, 600)
+        
+        # Add a toolbar
+        self.toolbar = QToolBar("Main Toolbar")
+        self.addToolBar(self.toolbar)
+
+        # Add a "Settings" action to the toolbar
+        settings_action = QAction("Settings", self)
+        settings_action.triggered.connect(self.open_settings_dialog)
+        self.toolbar.addAction(settings_action)
         
         # Central widget
         central_widget = QWidget()
@@ -93,6 +108,7 @@ class MainWindow(QMainWindow):
         doc_display_layout.addWidget(self.doc_display_label)
         self.doc_display = QListWidget()
         doc_display_layout.addWidget(self.doc_display)
+        self.doc_display.currentTextChanged.connect(self.show_section_content)
         
         # Create a horizontal layout for file explorer and button
         file_explorer_with_button_layout = QHBoxLayout()
@@ -125,9 +141,9 @@ class MainWindow(QMainWindow):
         self.query_btn = QPushButton("Query")
         self.query_btn.clicked.connect(self.handle_query)
         q_with_button.addWidget(self.query_btn)
-        self.single_checkbox = QCheckBox("Single Response")
-        self.single_checkbox.stateChanged.connect(self.single_response_change)
-        q_with_button.addWidget(self.single_checkbox)
+        self.top_responses_checkbox = QCheckBox("Top Responses")
+        self.top_responses_checkbox.stateChanged.connect(self.single_response_change)
+        q_with_button.addWidget(self.top_responses_checkbox)
         q_all.addLayout(q_with_button)
         main_layout.addLayout(q_all)
         
@@ -150,10 +166,38 @@ class MainWindow(QMainWindow):
         # give the file explorer the cwd
         self.load_directory_contents()
         
+    def open_settings_dialog(self):
+        """Open a settings dialog."""
+        dialog = QDialog(self)
+        dialog.setWindowTitle("Settings")
+        dialog.setGeometry(200, 200, 300, 200)
+
+        layout = QVBoxLayout(dialog)
+
+        # Add a spin box for n_results
+        layout.addWidget(QLabel("Number of Results (n_results):"))
+        n_results_spinbox = QSpinBox()
+        n_results_spinbox.setRange(1, 10)  # Allow 1 to 10 results
+        n_results_spinbox.setValue(self.n_results)  # Set the current value
+        n_results_spinbox.valueChanged.connect(self.update_n_results)
+        layout.addWidget(n_results_spinbox)
+
+        # Close button
+        close_button = QPushButton("Close")
+        close_button.clicked.connect(dialog.close)
+        layout.addWidget(close_button)
+
+        dialog.exec()
+    
+    def update_n_results(self, value):
+        """Update the n_results value."""
+        self.n_results = value
+        logger.info(f"n_results updated to: {self.n_results}")    
+    
     def single_response_change(self, state):
         """Handle the single response checkbox state change."""
         logger.info(f"single_response signal: {state}")
-        self.single_response = state == 2  # 2 means checked
+        self.qa_response = state == 2  # 2 means checked
         
     def parse_file(self):
         """Parse the selected PDF file."""
@@ -181,7 +225,24 @@ class MainWindow(QMainWindow):
             logger.error(f"Error parsing file: {e}")
             self.status_label.setText("Status: Error parsing file.")
             self.parsed_doc = None
-            
+    
+    def show_section_content(self, section_title):
+        """Show the content of the selected section."""
+        logger.info(f"clicked signal: show_section_content with title: {section_title}")
+        if not self.parsed_doc:
+            self.status_label.setText("Status: No parsed document available.")
+            return
+        for section in self.parsed_doc.sections():
+            if section.title == section_title:
+                paragraphs = [p.to_text() for p in section.paragraphs()]
+                # flatten the list of paragraphs
+                # paragraphs = [sentence for sublist in paragraphs for sentence in sublist]
+                self.summary_out_put.setText("\n".join(paragraphs))
+                self.status_label.setText(f"Status: Displaying content for section: {section_title}")
+                return
+        
+        self.status_label.setText("Status: Section not found.")
+               
     def change_f_path(self, fp):
         self.current_doc_path = fp
         self.query_label.setText(f"Enter your query for: {self.current_doc_path}")
@@ -230,15 +291,17 @@ class MainWindow(QMainWindow):
         self.summarize_btn.setEnabled(False)
         self.status_label.setText("Status: Processing query...")
 
-        # Create and start the worker thread
-        self.query_worker = QueryWorker(query, context, self.single_response)
+        # Create and start the worker thread, optional arguments define the query job run:
+        # 1. top n results order by similarity
+        # 2. document filtered by query and similarity in the order it appears in the document.
+        self.query_worker = QueryWorker(query, context, self.qa_response, self.n_results)
         self.query_worker.finished.connect(self.on_query_complete)
         self.query_worker.error.connect(self.on_query_error)
         self.query_worker.start()
 
     def on_query_complete(self, response):
         """Handle the completion of the query."""
-        self.summary_out_put.setPlainText(response)
+        self.summary_out_put.setText(response)
         self.status_label.setText("Status: Query processed successfully.")
         self.query_btn.setEnabled(True)
         self.summarize_btn.setEnabled(True)
@@ -270,7 +333,7 @@ class MainWindow(QMainWindow):
 
     def on_summarization_complete(self, summary):
         """Handle the completion of the summarization."""
-        self.summary_out_put.setPlainText(f"Summary:\n{summary}")
+        self.summary_out_put.setText(f"Summary:\n{summary}")
         self.status_label.setText("Status: Response summarized successfully.")
         self.summarize_btn.setEnabled(True)
         self.query_btn.setEnabled(True)
